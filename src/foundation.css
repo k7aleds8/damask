@@ -4,7 +4,6 @@ body, body.theme-dark, body.theme-light {
   --dm-line-height: 1.9;
   --dm-line-width: 46rem;
   --dm-radius: 14px;
-  --dm-ease: cubic-bezier(.2, .7, .2, 1);
   --dm-shadow: 0 10px 30px rgba(0, 0, 0, .28), 0 2px 6px rgba(0, 0, 0, .18);
   --dm-shadow-soft: 0 4px 14px rgba(0, 0, 0, .16);
   --dm-mask-quote: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 48'><path d='M0 48V30C0 13 9 3 25 0l3 6C19 9 14 15 14 23h12v25H0zm36 0V30C36 13 45 3 61 0l3 6c-9 3-14 9-14 17h12v25H36z'/></svg>");

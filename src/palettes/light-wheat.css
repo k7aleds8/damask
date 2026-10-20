@@ -13,7 +13,7 @@
   --color-base-100: #161616;
   --dm-bg: #edebe0; --dm-bg2: #e3dfd1; --dm-bg3: #e2dcc9; --dm-border: #cdc4b0;
   --dm-text: #161616; --dm-muted: #52524f; --dm-faint: #82807b;
-  --dm-accent: #054239; --dm-accent-rgb: 5, 66, 57; --dm-accent2: #6b1f2a; --dm-accent2-rgb: 107, 31, 42; --dm-accent3: #6e6149; --dm-accent3-rgb: 110, 97, 73;
+  --dm-accent: #054239; --dm-accent-rgb: 5, 66, 57; --dm-accent2: #6b1f2a; --dm-accent2-rgb: 107, 31, 42; --dm-accent3: #6e6149;
   --dm-on-accent: #ffffff;
   --dm-h1: #4a151e;
   --dm-h2: #054239;
@@ -32,7 +32,7 @@
   --dm-folder-9: #3d3a3b;
   --dm-forest-bg: #e6efed; --dm-forest: #054239; --dm-forest-rgb: 5, 66, 57; --dm-forest-text: #002623;
   --dm-umber-bg: #f0e9ea; --dm-umber: #6b1f2a; --dm-umber-rgb: 107, 31, 42; --dm-umber-text: #260f14;
-  --dm-wheat-bg: #eae5d7; --dm-wheat: #6e6149; --dm-wheat-rgb: 110, 97, 73; --dm-wheat-text: #161616;
+  --dm-wheat-bg: #eae5d7; --dm-wheat: #8a6a1f; --dm-wheat-rgb: 138, 106, 31; --dm-wheat-text: #161616;
   --dm-charcoal-bg: #efefef; --dm-charcoal: #3d3a3b; --dm-charcoal-rgb: 61, 58, 59; --dm-charcoal-text: #161616;
   --color-red: #6b1f2a; --color-red-rgb: 107, 31, 42;
   --color-orange: #845748; --color-orange-rgb: 132, 87, 72;

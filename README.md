@@ -11,7 +11,7 @@ calm enough for long writing, ornamented enough to feel like a place.
 
 <br>
 
-[![Version](https://img.shields.io/badge/version-2.0.0-b9a779?style=flat-square&labelColor=002623)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.0.1-b9a779?style=flat-square&labelColor=002623)](CHANGELOG.md)
 [![Obsidian](https://img.shields.io/badge/Obsidian-1.5%2B-7ea69c?style=flat-square&labelColor=002623&logo=obsidian&logoColor=edebe0)](https://obsidian.md)
 [![Modes](https://img.shields.io/badge/dark%20·%20light-7%20palettes-a67b7c?style=flat-square&labelColor=002623)](#palettes)
 [![License](https://img.shields.io/badge/license-MIT-edebe0?style=flat-square&labelColor=002623)](LICENSE)
@@ -164,6 +164,25 @@ Obsidian's own types — `note`, `tip`, `warning`, `danger` and the rest — are
 ```
 
 </details>
+
+## For snippet writers
+
+Every palette sets the same `--dm-*` variables, so a CSS snippet written against them follows whichever palette is active.
+
+| Variables | What they are |
+|---|---|
+| `--dm-bg` `--dm-bg2` `--dm-bg3` | Page, sidebar and raised surfaces |
+| `--dm-text` `--dm-muted` `--dm-faint` | Text, from strongest to quietest |
+| `--dm-accent` `--dm-accent2` `--dm-accent3` | The palette's three accents; the first two also come as `-rgb` triplets |
+| `--dm-forest` `--dm-wheat` `--dm-umber` `--dm-charcoal` | Named colour families, each with `-bg`, `-text` and `-rgb` |
+| `--dm-folder-1` … `--dm-folder-9` | Nine folder colours tuned to the palette |
+| `--dm-h1` … `--dm-h6` | Heading colours |
+| `--dm-mask-star` `--dm-mask-diamond` `--dm-mask-wave` `--dm-mask-quote` `--dm-mask-khatam-ring` | Ornament shapes, for use as CSS masks |
+
+```css
+/* a folder colour that changes with the palette */
+.nav-folder-title[data-path="Projects"] { color: var(--dm-folder-2); }
+```
 
 ## Companion plugin
 

@@ -1,6 +1,13 @@
 # Changelog
 
-## 2.0.0 — unreleased
+## 2.0.1
+
+- Light palettes: warning and question callouts now use a clear ochre gold, so they no
+  longer look like notes and tips. Highlighted text picks up the same warmer tint.
+- Removed two variables nothing used. The remaining `--dm-*` variables are documented
+  in the README for snippet writers.
+
+## 2.0.0
 
 First public release, renamed from Qomra.
 

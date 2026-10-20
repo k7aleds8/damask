@@ -1,4 +1,4 @@
-/* Damascene 2.0.0 — https://github.com/k7aleds8/damascene */
+/* Damascene 2.0.1 — https://github.com/k7aleds8/damascene */
 
 /* @settings
 name: Damascene
@@ -177,7 +177,7 @@ settings:
   --color-base-100: #edebe0;
   --dm-bg: #002623; --dm-bg2: #001b19; --dm-bg3: #03352f; --dm-border: #15433e;
   --dm-text: #edebe0; --dm-muted: #a6b0a7; --dm-faint: #6b7f78;
-  --dm-accent: #b9a779; --dm-accent-rgb: 185, 167, 121; --dm-accent2: #7ea69c; --dm-accent2-rgb: 126, 166, 156; --dm-accent3: #a67b7c; --dm-accent3-rgb: 166, 123, 124;
+  --dm-accent: #b9a779; --dm-accent-rgb: 185, 167, 121; --dm-accent2: #7ea69c; --dm-accent2-rgb: 126, 166, 156; --dm-accent3: #a67b7c;
   --dm-on-accent: #161616;
   --dm-h1: #b9a779;
   --dm-h2: #7ea69c;
@@ -223,7 +223,7 @@ settings:
   --color-base-100: #161616;
   --dm-bg: #edebe0; --dm-bg2: #e3dfd1; --dm-bg3: #e2dcc9; --dm-border: #cdc4b0;
   --dm-text: #161616; --dm-muted: #52524f; --dm-faint: #82807b;
-  --dm-accent: #054239; --dm-accent-rgb: 5, 66, 57; --dm-accent2: #6b1f2a; --dm-accent2-rgb: 107, 31, 42; --dm-accent3: #6e6149; --dm-accent3-rgb: 110, 97, 73;
+  --dm-accent: #054239; --dm-accent-rgb: 5, 66, 57; --dm-accent2: #6b1f2a; --dm-accent2-rgb: 107, 31, 42; --dm-accent3: #6e6149;
   --dm-on-accent: #ffffff;
   --dm-h1: #4a151e;
   --dm-h2: #054239;
@@ -242,7 +242,7 @@ settings:
   --dm-folder-9: #3d3a3b;
   --dm-forest-bg: #e6efed; --dm-forest: #054239; --dm-forest-rgb: 5, 66, 57; --dm-forest-text: #002623;
   --dm-umber-bg: #f0e9ea; --dm-umber: #6b1f2a; --dm-umber-rgb: 107, 31, 42; --dm-umber-text: #260f14;
-  --dm-wheat-bg: #eae5d7; --dm-wheat: #6e6149; --dm-wheat-rgb: 110, 97, 73; --dm-wheat-text: #161616;
+  --dm-wheat-bg: #eae5d7; --dm-wheat: #8a6a1f; --dm-wheat-rgb: 138, 106, 31; --dm-wheat-text: #161616;
   --dm-charcoal-bg: #efefef; --dm-charcoal: #3d3a3b; --dm-charcoal-rgb: 61, 58, 59; --dm-charcoal-text: #161616;
   --color-red: #6b1f2a; --color-red-rgb: 107, 31, 42;
   --color-orange: #845748; --color-orange-rgb: 132, 87, 72;
@@ -269,7 +269,7 @@ settings:
   --color-base-100: #edebe0;
   --dm-bg: #161616; --dm-bg2: #101010; --dm-bg3: #282627; --dm-border: #393637;
   --dm-text: #edebe0; --dm-muted: #acaba3; --dm-faint: #777671;
-  --dm-accent: #b9a779; --dm-accent-rgb: 185, 167, 121; --dm-accent2: #7ea69c; --dm-accent2-rgb: 126, 166, 156; --dm-accent3: #a67b7c; --dm-accent3-rgb: 166, 123, 124;
+  --dm-accent: #b9a779; --dm-accent-rgb: 185, 167, 121; --dm-accent2: #7ea69c; --dm-accent2-rgb: 126, 166, 156; --dm-accent3: #a67b7c;
   --dm-on-accent: #161616;
   --dm-h1: #b9a779;
   --dm-h2: #edebe0;
@@ -315,7 +315,7 @@ settings:
   --color-base-100: #edebe0;
   --dm-bg: #260f14; --dm-bg2: #1b0a0e; --dm-bg3: #3a121a; --dm-border: #48171f;
   --dm-text: #edebe0; --dm-muted: #b1a9a3; --dm-faint: #807270;
-  --dm-accent: #b9a779; --dm-accent-rgb: 185, 167, 121; --dm-accent2: #b38f8e; --dm-accent2-rgb: 179, 143, 142; --dm-accent3: #7ea69c; --dm-accent3-rgb: 126, 166, 156;
+  --dm-accent: #b9a779; --dm-accent-rgb: 185, 167, 121; --dm-accent2: #b38f8e; --dm-accent2-rgb: 179, 143, 142; --dm-accent3: #7ea69c;
   --dm-on-accent: #161616;
   --dm-h1: #b9a779;
   --dm-h2: #b38f8e;
@@ -361,7 +361,7 @@ settings:
   --color-base-100: #edebe0;
   --dm-bg: #161616; --dm-bg2: #0a1f1d; --dm-bg3: #102522; --dm-border: #233633;
   --dm-text: #edebe0; --dm-muted: #acaba3; --dm-faint: #777671;
-  --dm-accent: #7ea69c; --dm-accent-rgb: 126, 166, 156; --dm-accent2: #b9a779; --dm-accent2-rgb: 185, 167, 121; --dm-accent3: #a67b7c; --dm-accent3-rgb: 166, 123, 124;
+  --dm-accent: #7ea69c; --dm-accent-rgb: 126, 166, 156; --dm-accent2: #b9a779; --dm-accent2-rgb: 185, 167, 121; --dm-accent3: #a67b7c;
   --dm-on-accent: #002623;
   --dm-h1: #7ea69c;
   --dm-h2: #b9a779;
@@ -407,7 +407,7 @@ settings:
   --color-base-100: #161616;
   --dm-bg: #ffffff; --dm-bg2: #f5f4ee; --dm-bg3: #f2f0e8; --dm-border: #d3ccba;
   --dm-text: #161616; --dm-muted: #575757; --dm-faint: #8a8a8a;
-  --dm-accent: #6b1f2a; --dm-accent-rgb: 107, 31, 42; --dm-accent2: #054239; --dm-accent2-rgb: 5, 66, 57; --dm-accent3: #6e6149; --dm-accent3-rgb: 110, 97, 73;
+  --dm-accent: #6b1f2a; --dm-accent-rgb: 107, 31, 42; --dm-accent2: #054239; --dm-accent2-rgb: 5, 66, 57; --dm-accent3: #6e6149;
   --dm-on-accent: #ffffff;
   --dm-h1: #002623;
   --dm-h2: #6b1f2a;
@@ -426,7 +426,7 @@ settings:
   --dm-folder-9: #3d3a3b;
   --dm-forest-bg: #e6efed; --dm-forest: #054239; --dm-forest-rgb: 5, 66, 57; --dm-forest-text: #002623;
   --dm-umber-bg: #f0e9ea; --dm-umber: #6b1f2a; --dm-umber-rgb: 107, 31, 42; --dm-umber-text: #260f14;
-  --dm-wheat-bg: #eae5d7; --dm-wheat: #6e6149; --dm-wheat-rgb: 110, 97, 73; --dm-wheat-text: #161616;
+  --dm-wheat-bg: #eae5d7; --dm-wheat: #8a6a1f; --dm-wheat-rgb: 138, 106, 31; --dm-wheat-text: #161616;
   --dm-charcoal-bg: #efefef; --dm-charcoal: #3d3a3b; --dm-charcoal-rgb: 61, 58, 59; --dm-charcoal-text: #161616;
   --color-red: #6b1f2a; --color-red-rgb: 107, 31, 42;
   --color-orange: #845748; --color-orange-rgb: 132, 87, 72;
@@ -453,7 +453,7 @@ settings:
   --color-base-100: #002623;
   --dm-bg: #f6f9f8; --dm-bg2: #e6efed; --dm-bg3: #ecf2f1; --dm-border: #c6d9d6;
   --dm-text: #002623; --dm-muted: #45615f; --dm-faint: #7b908e;
-  --dm-accent: #054239; --dm-accent-rgb: 5, 66, 57; --dm-accent2: #6b1f2a; --dm-accent2-rgb: 107, 31, 42; --dm-accent3: #6e6149; --dm-accent3-rgb: 110, 97, 73;
+  --dm-accent: #054239; --dm-accent-rgb: 5, 66, 57; --dm-accent2: #6b1f2a; --dm-accent2-rgb: 107, 31, 42; --dm-accent3: #6e6149;
   --dm-on-accent: #ffffff;
   --dm-h1: #054239;
   --dm-h2: #4a151e;
@@ -472,7 +472,7 @@ settings:
   --dm-folder-9: #3d3a3b;
   --dm-forest-bg: #e6efed; --dm-forest: #054239; --dm-forest-rgb: 5, 66, 57; --dm-forest-text: #002623;
   --dm-umber-bg: #f0e9ea; --dm-umber: #6b1f2a; --dm-umber-rgb: 107, 31, 42; --dm-umber-text: #260f14;
-  --dm-wheat-bg: #eae5d7; --dm-wheat: #6e6149; --dm-wheat-rgb: 110, 97, 73; --dm-wheat-text: #161616;
+  --dm-wheat-bg: #eae5d7; --dm-wheat: #8a6a1f; --dm-wheat-rgb: 138, 106, 31; --dm-wheat-text: #161616;
   --dm-charcoal-bg: #efefef; --dm-charcoal: #3d3a3b; --dm-charcoal-rgb: 61, 58, 59; --dm-charcoal-text: #161616;
   --color-red: #6b1f2a; --color-red-rgb: 107, 31, 42;
   --color-orange: #845748; --color-orange-rgb: 132, 87, 72;
@@ -490,7 +490,6 @@ body, body.theme-dark, body.theme-light {
   --dm-line-height: 1.9;
   --dm-line-width: 46rem;
   --dm-radius: 14px;
-  --dm-ease: cubic-bezier(.2, .7, .2, 1);
   --dm-shadow: 0 10px 30px rgba(0, 0, 0, .28), 0 2px 6px rgba(0, 0, 0, .18);
   --dm-shadow-soft: 0 4px 14px rgba(0, 0, 0, .16);
   --dm-mask-quote: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 48'><path d='M0 48V30C0 13 9 3 25 0l3 6C19 9 14 15 14 23h12v25H0zm36 0V30C36 13 45 3 61 0l3 6c-9 3-14 9-14 17h12v25H36z'/></svg>");
