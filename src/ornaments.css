@@ -1,0 +1,10 @@
+body {
+  /* 8-point star (khatam) */
+  --dm-mask-khatam: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='20,20 80,20 80,80 20,80'/><polygon points='50,7.6 92.4,50 50,92.4 7.6,50'/></svg>");
+  /* khatam outline ring */
+  --dm-mask-khatam-ring: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='black' stroke-width='3'><polygon points='22,22 78,22 78,78 22,78'/><polygon points='50,10.4 89.6,50 50,89.6 10.4,50'/><circle cx='50' cy='50' r='14'/></svg>");
+  /* girih lattice tile — interlaced 8-point stars */
+  --dm-mask-girih: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60' fill='none' stroke='black' stroke-width='1'><polygon points='18,18 42,18 42,42 18,42'/><polygon points='30,13 47,30 30,47 13,30'/><path d='M0 30h13M47 30h13M30 0v13M30 47v13'/><path d='M0 0l18 18M60 0L42 18M0 60l18-18M60 60L42 42'/></svg>");
+  /* arabesque corner */
+  --dm-mask-corner: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round'><path d='M58 2H20C10 2 2 10 2 20v38'/><path d='M50 10H24c-8 0-14 6-14 14v26'/><path d='M34 10c0 9-6 15-15 15'/><circle cx='12' cy='12' r='3' fill='black' stroke='none'/></svg>");
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9dfc6"/><stop offset="1" stop-color="#d9c99f"/></linearGradient>
+<pattern id="ablaq" width="40" height="36" patternUnits="userSpaceOnUse"><rect width="40" height="22" fill="#efe6d0"/><rect y="22" width="40" height="14" fill="#c9b78f"/></pattern></defs>
+<rect width="960" height="420" fill="url(#sky)"/>
+<rect x="60" y="70" width="840" height="300" fill="url(#ablaq)" opacity=".9"/>
+<g fill="#0f3b35">
+<path d="M150 370V215a90 90 0 0 1 180 0v155z"/><path d="M390 370V185a90 110 0 0 1 180 0v185z"/><path d="M630 370V215a90 90 0 0 1 180 0v155z"/></g>
+<g fill="none" stroke="#b9a779" stroke-width="6"><path d="M150 370V215a90 90 0 0 1 180 0v155"/><path d="M390 370V185a90 110 0 0 1 180 0v185"/><path d="M630 370V215a90 90 0 0 1 180 0v155"/></g>
+<g transform="translate(480 140)" fill="#b9a779"><polygon points="0,-34 10,-10 34,0 10,10 0,34 -10,10 -34,0 -10,-10"/><polygon points="-24,-24 0,-14 24,-24 14,0 24,24 0,14 -24,24 -14,0" opacity=".7"/></g>
+<rect x="0" y="370" width="960" height="50" fill="#5a4a3a"/>
+<ellipse cx="480" cy="372" rx="170" ry="16" fill="#7ea69c"/><ellipse cx="480" cy="368" rx="150" ry="11" fill="#a9cbc2"/>
+<path d="M480 368c-6-40 6-70 0-96M480 272c-18 6-30 18-36 34M480 272c18 6 30 18 36 34" stroke="#e9f2ef" stroke-width="4" fill="none" stroke-linecap="round"/>
+<g fill="#2f5d3a"><circle cx="95" cy="330" r="38"/><circle cx="865" cy="330" r="38"/></g>
+<g fill="#e2b33d"><circle cx="85" cy="320" r="6"/><circle cx="105" cy="338" r="6"/><circle cx="858" cy="318" r="6"/><circle cx="878" cy="340" r="6"/></g>
+</svg>

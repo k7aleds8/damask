@@ -1,0 +1,54 @@
+.markdown-rendered hr, .markdown-source-view.mod-cm6 hr.cm-line, .markdown-source-view.mod-cm6 .hr hr {
+  position: relative;
+  border: none;
+  height: 22px;
+  margin: 2.2em 0;
+  overflow: visible;
+  background:
+    linear-gradient(to left, transparent, color-mix(in srgb, var(--dm-accent) 55%, transparent) 38%, transparent 47%, transparent 53%, color-mix(in srgb, var(--dm-accent) 55%, transparent) 62%, transparent) center / 100% 1px no-repeat;
+}
+.markdown-rendered hr::after, .markdown-source-view.mod-cm6 .hr hr::after {
+  content: "";
+  position: absolute; inset: 0;
+  margin: auto;
+  width: 120px; height: 22px;
+  background: var(--dm-accent);
+  -webkit-mask: var(--dm-mask-diamond) center / contain no-repeat;
+  mask: var(--dm-mask-diamond) center / contain no-repeat;
+}
+
+/* HTML dividers: <div class="dm-divider"></div>  ·  <div class="dm-divider">نص</div> */
+.dm-divider {
+  display: flex; align-items: center; gap: 1em;
+  margin: 2em 0;
+  color: var(--dm-accent);
+  font-weight: 700; font-size: .95em;
+  min-height: 22px;
+}
+.dm-divider::before, .dm-divider::after {
+  content: ""; flex: 1; height: 1px;
+  background: linear-gradient(to left, transparent, color-mix(in srgb, var(--dm-accent) 60%, transparent));
+}
+.dm-divider::after { background: linear-gradient(to right, transparent, color-mix(in srgb, var(--dm-accent) 60%, transparent)); }
+.dm-divider:empty::before { flex: 1; }
+.dm-divider:empty { background: var(--dm-accent); -webkit-mask: var(--dm-mask-diamond) center / 120px 22px no-repeat, linear-gradient(#000 0 0) center / 100% 1px no-repeat; mask: var(--dm-mask-diamond) center / 120px 22px no-repeat, linear-gradient(#000 0 0) center / 100% 1px no-repeat; }
+.dm-divider:empty::before, .dm-divider:empty::after { display: none; }
+.dm-divider.dots { height: 14px; background: radial-gradient(circle, var(--dm-accent) 2px, transparent 2.5px) center / 18px 14px repeat-x; -webkit-mask: linear-gradient(to left, transparent, #000 25%, #000 75%, transparent); mask: linear-gradient(to left, transparent, #000 25%, #000 75%, transparent); }
+.dm-divider.wave { height: 14px; background: var(--dm-accent2); -webkit-mask: var(--dm-mask-wave) center / 40px 12px repeat-x; mask: var(--dm-mask-wave) center / 40px 12px repeat-x; opacity: .8; }
+.dm-divider.star { background: var(--dm-accent3); -webkit-mask: var(--dm-mask-star) center / 22px 22px no-repeat, linear-gradient(#000 0 0) left center / 44% 1px no-repeat, linear-gradient(#000 0 0) right center / 44% 1px no-repeat; mask: var(--dm-mask-star) center / 22px 22px no-repeat, linear-gradient(#000 0 0) left center / 44% 1px no-repeat, linear-gradient(#000 0 0) right center / 44% 1px no-repeat; }
+.dm-divider.double { height: 6px; border-block: 1px solid color-mix(in srgb, var(--dm-accent) 55%, transparent); }
+.dm-divider.dots::before, .dm-divider.dots::after, .dm-divider.wave::before, .dm-divider.wave::after,
+.dm-divider.star::before, .dm-divider.star::after, .dm-divider.double::before, .dm-divider.double::after { display: none; }
+
+/* ruled notebook lines — cssclass: dm-lined  (or Style Settings toggle) */
+body.dm-lined-all .markdown-preview-view .markdown-preview-sizer,
+.markdown-preview-view.dm-lined .markdown-preview-sizer,
+body.dm-lined-all .markdown-source-view.mod-cm6 .cm-content,
+.markdown-source-view.mod-cm6.dm-lined .cm-content {
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent calc(var(--dm-line-height) * 1em - 1px), color-mix(in srgb, var(--dm-accent) 13%, transparent) calc(var(--dm-line-height) * 1em - 1px), color-mix(in srgb, var(--dm-accent) 13%, transparent) calc(var(--dm-line-height) * 1em));
+  background-position: 0 .35em;
+}
+
+/* the side rules fade away from the title, whichever side they're on */
+.dm-divider:dir(ltr)::before { background: linear-gradient(to right, transparent, color-mix(in srgb, var(--dm-accent) 60%, transparent)); }
+.dm-divider:dir(ltr)::after { background: linear-gradient(to left, transparent, color-mix(in srgb, var(--dm-accent) 60%, transparent)); }

@@ -1,0 +1,18 @@
+.workspace-ribbon, .workspace-tab-header-container { border-color: var(--dm-border); }
+.workspace-tab-header.is-active { box-shadow: inset 0 -2px 0 var(--dm-accent); }
+.nav-file-title.is-active { font-weight: 600; }
+.view-header-title { font-weight: 700; }
+button.mod-cta { font-weight: 700; }
+.status-bar { border-top: 1px solid var(--dm-border); }
+body.dm-colorful-ribbon .workspace-ribbon .side-dock-ribbon-action:nth-child(4n+1) { color: var(--dm-accent); }
+body.dm-colorful-ribbon .workspace-ribbon .side-dock-ribbon-action:nth-child(4n+2) { color: var(--dm-accent2); }
+body.dm-colorful-ribbon .workspace-ribbon .side-dock-ribbon-action:nth-child(4n+3) { color: var(--dm-accent3); }
+
+/* Excalidraw embeds stay transparent */
+.excalidraw-svg, .excalidraw-embedded-img { background: transparent !important; }
+
+/* Palette swatches used in the theme guide: <span class="dm-swatch" style="--c:#988561"></span> */
+.dm-swatch { display: inline-block; width: 1.4em; height: 1.4em; border-radius: 6px; vertical-align: middle; background: var(--c); box-shadow: 0 0 0 1px var(--dm-border); margin-inline-end: .4em; }
+.dm-palette { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin: 1em 0; }
+.dm-palette > div { border-radius: 12px; padding: 34px 12px 10px; background: var(--c); color: var(--t, #161616); font-size: .82em; font-weight: 700; box-shadow: var(--dm-shadow-soft); }
+.dm-palette > div span { display: block; font-weight: 400; font-family: var(--font-monospace); opacity: .8; }

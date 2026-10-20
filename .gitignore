@@ -1,0 +1,13 @@
+.vault-path
+*.log
+.DS_Store
+node_modules/
+
+# the demo vault keeps its notes; Obsidian's state and the installed builds stay local
+demo-vault/.obsidian/workspace*.json
+demo-vault/.obsidian/plugins/
+demo-vault/.obsidian/themes/
+
+# raw captures from the demo vault; the finished images live in docs/screenshots
+docs/mockups/shots/
+docs/mockups/build/

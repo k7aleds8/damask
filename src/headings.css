@@ -1,0 +1,65 @@
+.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3,
+.markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6,
+.HyperMD-header { letter-spacing: 0; }
+
+body:not(.dm-plain-headings) .markdown-rendered h1,
+body:not(.dm-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 {
+  padding-bottom: .35em;
+  background-image:
+    linear-gradient(to left, var(--dm-h1), color-mix(in srgb, var(--dm-h1) 30%, transparent) 55%, transparent 90%);
+  background-size: 100% 2px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+body:not(.dm-plain-headings) .markdown-rendered h1::after {
+  content: "";
+  display: block;
+  width: 60px; height: 12px;
+  margin-top: 6px;
+  background: var(--dm-h1);
+  -webkit-mask: var(--dm-mask-diamond) right center / contain no-repeat;
+  mask: var(--dm-mask-diamond) right center / contain no-repeat;
+  opacity: .85;
+}
+body:not(.dm-plain-headings) .markdown-rendered h2,
+body:not(.dm-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 {
+  border-inline-start: 4px solid var(--dm-h2);
+  padding-inline-start: .6em;
+  border-radius: 2px;
+  background: linear-gradient(to left, color-mix(in srgb, var(--dm-h2) 10%, transparent), transparent 70%);
+}
+body:not(.dm-plain-headings) .markdown-rendered h3::before,
+body:not(.dm-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3::before {
+  content: "";
+  display: inline-block;
+  width: .5em; height: .5em;
+  margin-inline-end: .45em;
+  vertical-align: middle;
+  background: var(--dm-h3);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+body:not(.dm-plain-headings) .markdown-rendered h4,
+body:not(.dm-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4 {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--dm-h4) 45%, transparent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+}
+.markdown-rendered h5, .markdown-rendered h6 { opacity: .92; }
+.inline-title { color: var(--dm-h1); font-weight: 900; }
+
+/* ornaments start where the line starts */
+body:not(.dm-plain-headings) .markdown-rendered h1:dir(ltr),
+body:not(.dm-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1:dir(ltr) {
+  background-image: linear-gradient(to right, var(--dm-h1), color-mix(in srgb, var(--dm-h1) 30%, transparent) 55%, transparent 90%);
+  background-position: left bottom;
+}
+body:not(.dm-plain-headings) .markdown-rendered h1:dir(ltr)::after {
+  -webkit-mask-position: left center;
+  mask-position: left center;
+}
+body:not(.dm-plain-headings) .markdown-rendered h2:dir(ltr),
+body:not(.dm-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2:dir(ltr) {
+  background: linear-gradient(to right, color-mix(in srgb, var(--dm-h2) 10%, transparent), transparent 70%);
+}

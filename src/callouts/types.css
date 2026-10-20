@@ -1,0 +1,184 @@
+/* ---------- [!quote] — medallion card (default)  |side |big |forest |umber |wheat ---------- */
+.callout:is([data-callout="quote"], [data-callout="cite"]) {
+  --callout-color: var(--dm-accent-rgb);
+  margin-top: 3em;
+  padding: 2.4em 2.2em 1.4em;
+  text-align: center;
+}
+.callout:is([data-callout="quote"], [data-callout="cite"])::before {   /* khatam medallion on the top edge */
+  top: -27px; bottom: auto; inset-inline-start: 0; inset-inline-end: 0;
+  margin: auto;
+  transform: none;
+  width: 54px; height: 54px;
+  opacity: 1;
+  background: linear-gradient(160deg, var(--dm-c), var(--dm-c-deep));
+  -webkit-mask: var(--dm-mask-khatam) center / contain no-repeat;
+  mask: var(--dm-mask-khatam) center / contain no-repeat;
+  filter: drop-shadow(0 6px 12px rgba(var(--callout-color), .5));
+  z-index: 2;
+}
+.callout:is([data-callout="quote"], [data-callout="cite"])::after {    /* quote mark inside the medallion */
+  inset: auto; top: -8px; left: 0; right: 0; margin: auto;
+  width: 22px; height: 16px;
+  z-index: 3; opacity: 1; border-radius: 0;
+  background: var(--dm-on-accent);
+  -webkit-mask: var(--dm-mask-quote) center / contain no-repeat; -webkit-mask-composite: source-over;
+  mask: var(--dm-mask-quote) center / contain no-repeat; mask-composite: add;
+}
+.callout:is([data-callout="quote"], [data-callout="cite"]) .callout-content { font-size: 1.16em; font-weight: 500; line-height: 2; }
+.callout:is([data-callout="quote"], [data-callout="cite"]) .callout-content > p:last-child:not(:first-child) {
+  display: flex; align-items: center; justify-content: center; gap: .8em;
+  font-size: .76em; font-weight: 500; color: var(--dm-c); margin-top: 1em;
+}
+.callout:is([data-callout="quote"], [data-callout="cite"]) .callout-content > p:last-child:not(:first-child)::before,
+.callout:is([data-callout="quote"], [data-callout="cite"]) .callout-content > p:last-child:not(:first-child)::after {
+  content: ""; width: 54px; height: 8px;
+  background: var(--dm-c);
+  -webkit-mask: var(--dm-mask-diamond) center / contain no-repeat;
+  mask: var(--dm-mask-diamond) center / contain no-repeat;
+  opacity: .8;
+}
+.callout[data-callout="quote"][data-callout-metadata~="big"] .callout-content { font-size: 1.5em; font-weight: 700; line-height: 1.8; }
+.callout[data-callout="quote"][data-callout-metadata~="forest"] { --callout-color: var(--dm-forest-rgb); }
+.callout[data-callout="quote"][data-callout-metadata~="umber"] { --callout-color: var(--dm-umber-rgb); }
+.callout[data-callout="quote"][data-callout-metadata~="wheat"] { --callout-color: var(--dm-wheat-rgb); }
+/* |side — manuscript margin style */
+.callout[data-callout="quote"][data-callout-metadata~="side"] { text-align: start; margin-top: 1.6em; padding: 1.3em 1.6em 1.1em; padding-inline-start: 4.4em; }
+.callout[data-callout="quote"][data-callout-metadata~="side"]::before { top: 1.1em; bottom: auto; inset-inline-end: auto; inset-inline-start: 1em; margin: 0; width: 44px; height: 44px; }
+.callout[data-callout="quote"][data-callout-metadata~="side"]::after { top: calc(1.1em + 14px); inset-inline-end: auto; inset-inline-start: calc(1em + 12px); margin: 0; width: 20px; height: 15px; }
+.callout[data-callout="quote"][data-callout-metadata~="side"] .callout-content > p:last-child:not(:first-child) { justify-content: flex-end; }
+.callout[data-callout="quote"][data-callout-metadata~="side"] .callout-content > p:last-child:not(:first-child)::after { display: none; }
+
+/* ---------- [!wisdom] حكمة — double frame, khatam corners, centred ribbon ---------- */
+.callout[data-callout="wisdom"] {
+  --callout-color: var(--dm-wheat-rgb);
+  --callout-icon: lucide-sparkles;
+  text-align: center;
+  border-radius: 6px;
+  outline: 1px solid rgba(var(--callout-color), .45);
+  outline-offset: 5px;
+  margin: 2.6em 8px 1.8em;
+  padding: 2em 1.8em 1.4em;
+}
+.callout[data-callout="wisdom"] > .callout-title { inset-inline-start: 0; left: 50%; right: auto; transform: translate(-50%, -50%); }
+.callout[data-callout="wisdom"] .callout-content { font-size: 1.12em; font-weight: 500; }
+.callout[data-callout="wisdom"]::before {
+  top: -14px; bottom: auto; inset-inline-start: auto; inset-inline-end: -14px; width: 24px; height: 24px; opacity: 1; transform: none;
+  -webkit-mask: var(--dm-mask-khatam) center / contain no-repeat; mask: var(--dm-mask-khatam) center / contain no-repeat;
+  box-shadow: none; filter: drop-shadow(0 0 0 var(--dm-bg));
+}
+.callout[data-callout="wisdom"]::after {
+  inset: auto; bottom: -14px; inset-inline-start: -14px; width: 24px; height: 24px;
+  opacity: 1; z-index: 2; border-radius: 0;
+  -webkit-mask: var(--dm-mask-khatam) center / contain no-repeat; -webkit-mask-composite: source-over;
+  mask: var(--dm-mask-khatam) center / contain no-repeat; mask-composite: add;
+}
+
+/* ---------- [!ayah] — illuminated band with ornate brackets ---------- */
+.callout[data-callout="ayah"] {
+  --callout-color: var(--dm-forest-rgb);
+  text-align: center;
+  border-radius: 4px;
+  padding: 1.6em 2.4em 1.3em !important;
+  outline-offset: -9px;
+  outline: 1px solid rgba(var(--callout-color), .35);
+}
+.callout[data-callout="ayah"]::before { top: -11px; bottom: auto; inset-inline-start: 0; inset-inline-end: 0; margin: auto; transform: none; width: 22px; height: 22px; opacity: 1; z-index: 2; -webkit-mask: var(--dm-mask-khatam) center / contain no-repeat; mask: var(--dm-mask-khatam) center / contain no-repeat; filter: drop-shadow(0 0 4px rgba(var(--callout-color), .6)); }
+.callout[data-callout="ayah"] .callout-content { font-size: 1.32em; font-weight: 500; line-height: 2.1; color: rgb(var(--callout-color)); }
+.callout[data-callout="ayah"] .callout-content > p:first-child::before { content: "﴿ "; color: var(--dm-accent); font-family: 'Arabic Typesetting', 'Traditional Arabic', 'Amiri', 'Noto Naskh Arabic', serif; font-size: 1.3em; }
+.callout[data-callout="ayah"] .callout-content > p:first-child::after { content: " ﴾"; color: var(--dm-accent); font-family: 'Arabic Typesetting', 'Traditional Arabic', 'Amiri', 'Noto Naskh Arabic', serif; font-size: 1.3em; }
+.callout[data-callout="ayah"] .callout-content > p:last-child:not(:first-child) { font-size: .6em; color: var(--dm-muted); }
+
+/* ---------- [!poem] — hemistichs in two columns, khatam spine ---------- */
+.callout[data-callout="poem"] { --callout-color: var(--dm-umber-rgb); padding: 1.6em 1.8em 1.2em; }
+.callout[data-callout="poem"][data-callout-metadata~="title"] { padding-top: 2em; }
+.callout[data-callout="poem"][data-callout-metadata~="title"] > .callout-title { inset-inline-start: 0; left: 50%; right: auto; transform: translate(-50%, -50%); }
+.callout[data-callout="poem"] .callout-content ul {
+  display: grid; grid-template-columns: 1fr 1fr;
+  column-gap: 3.4em; row-gap: .55em;
+  margin: 0; padding: 0; list-style: none;
+  position: relative;
+  font-size: 1.14em; font-weight: 500;
+}
+.callout[data-callout="poem"] .callout-content ul::after {
+  content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 14px; margin-left: -7px;
+  background: rgb(var(--callout-color));
+  -webkit-mask: var(--dm-mask-khatam) center / 10px 10px repeat-y; mask: var(--dm-mask-khatam) center / 10px 10px repeat-y;
+  -webkit-mask-size: 10px 1.9em; mask-size: 10px 1.9em; opacity: .7;
+}
+.callout[data-callout="poem"] .callout-content li { text-align: center; margin: 0; padding: 0; text-align-last: center; }
+.callout[data-callout="poem"] .callout-content li::marker { content: ""; }
+.callout[data-callout="poem"] .list-bullet { display: none; }
+.callout[data-callout="poem"] .callout-content > p { text-align: center; color: var(--dm-muted); font-size: .85em; margin-top: .9em; }
+
+/* ---------- [!definition] تعريف — lexicon entry ---------- */
+.callout[data-callout="definition"] { --callout-color: var(--dm-accent2-rgb); --callout-icon: lucide-book-open; }
+.callout[data-callout="definition"] .callout-content { padding-inline-start: 1em; border-inline-start: 1px dashed rgba(var(--callout-color), .5); }
+
+/* ---------- [!key] فكرة محورية — glowing core ---------- */
+.callout[data-callout="key"] { --callout-color: var(--dm-accent-rgb); --callout-icon: lucide-key-round; box-shadow: 0 0 0 4px rgba(var(--callout-color), .07), 0 0 40px -10px rgba(var(--callout-color), .55), 0 22px 44px -26px rgba(0, 0, 0, .65); }
+.callout[data-callout="key"] .callout-content { font-size: 1.08em; font-weight: 500; }
+
+/* ---------- [!steps] — timeline with khatam numerals ---------- */
+.callout[data-callout="steps"] { --callout-color: var(--dm-forest-rgb); --callout-icon: lucide-footprints; }
+.callout[data-callout="steps"] .callout-content ol { list-style: none; counter-reset: dm-step; padding-inline-start: 2.8em; margin: .3em 0; position: relative; }
+.callout[data-callout="steps"] .callout-content ol::before {
+  content: ""; position: absolute; inset-inline-start: 1.12em; top: .9em; bottom: .9em; width: 2px;
+  background: linear-gradient(to bottom, rgb(var(--callout-color)), rgba(var(--callout-color), .12));
+}
+.callout[data-callout="steps"] .callout-content ol > li { counter-increment: dm-step; position: relative; margin: .7em 0; }
+.callout[data-callout="steps"] .callout-content ol > li::marker { content: ""; }
+.callout[data-callout="steps"] .callout-content ol > li::before {
+  content: counter(dm-step);
+  position: absolute; inset-inline-start: -2.8em; top: .05em;
+  width: 2.4em; height: 2.4em;
+  display: grid; place-items: center;
+  font-size: .9em; font-weight: 900; line-height: 1;
+  color: var(--dm-on-accent);
+  background: linear-gradient(160deg, var(--dm-c), var(--dm-c-deep));
+  -webkit-mask: var(--dm-mask-khatam) center / contain no-repeat; mask: var(--dm-mask-khatam) center / contain no-repeat;
+}
+
+/* ---------- [!box|forest|umber|wheat|charcoal|outline|glass|center|tab] ---------- */
+.callout[data-callout="box"] { --callout-color: var(--dm-accent-rgb); }
+.callout[data-callout="box"]:is([data-callout-metadata~="forest"], [data-callout-metadata~="umber"], [data-callout-metadata~="wheat"], [data-callout-metadata~="charcoal"]) {
+  background:
+    linear-gradient(165deg, rgba(255, 255, 255, .05), transparent 40%) padding-box,
+    linear-gradient(var(--dm-box-bg), var(--dm-box-bg)) padding-box,
+    linear-gradient(135deg, rgba(var(--callout-color), .95), rgba(var(--callout-color), .2) 35%, rgba(var(--callout-color), .15) 65%, rgba(var(--callout-color), .8)) border-box;
+  color: var(--dm-box-text);
+}
+.callout[data-callout="box"][data-callout-metadata~="forest"] { --callout-color: var(--dm-forest-rgb); --dm-box-bg: var(--dm-forest-bg); --dm-box-text: var(--dm-forest-text); }
+.callout[data-callout="box"][data-callout-metadata~="umber"] { --callout-color: var(--dm-umber-rgb); --dm-box-bg: var(--dm-umber-bg); --dm-box-text: var(--dm-umber-text); }
+.callout[data-callout="box"][data-callout-metadata~="wheat"] { --callout-color: var(--dm-wheat-rgb); --dm-box-bg: var(--dm-wheat-bg); --dm-box-text: var(--dm-wheat-text); }
+.callout[data-callout="box"][data-callout-metadata~="charcoal"] { --callout-color: var(--dm-charcoal-rgb); --dm-box-bg: var(--dm-charcoal-bg); --dm-box-text: var(--dm-charcoal-text); }
+.callout[data-callout="box"][data-callout-metadata~="outline"] { background: transparent; border: 1.5px dashed rgba(var(--callout-color), .6); outline: none; box-shadow: none; }
+.callout[data-callout="box"][data-callout-metadata~="glass"] { background: color-mix(in srgb, var(--dm-bg) 55%, transparent); backdrop-filter: blur(10px); border: 1px solid color-mix(in srgb, var(--dm-text) 14%, transparent); }
+.callout[data-callout="box"][data-callout-metadata~="center"] { text-align: center; }
+.callout[data-callout="box"][data-callout-metadata~="tab"] { border-top-width: 4px; }
+
+/* ---------- [!lined] ورقة مسطّرة — ruled sheet with margin rule ---------- */
+.callout[data-callout="lined"] {
+  --callout-color: var(--dm-wheat-rgb);
+  background-color: var(--dm-wheat-bg);
+  background-image:
+    linear-gradient(to left, transparent 2.4em, rgba(var(--dm-umber-rgb), .55) 2.4em, rgba(var(--dm-umber-rgb), .55) calc(2.4em + 1px), transparent calc(2.4em + 1px), transparent calc(2.4em + 4px), rgba(var(--dm-umber-rgb), .35) calc(2.4em + 4px), rgba(var(--dm-umber-rgb), .35) calc(2.4em + 5px), transparent calc(2.4em + 5px)),
+    repeating-linear-gradient(to bottom, transparent 0 calc(var(--dm-line-height) * 1em - 1px), rgba(var(--callout-color), .4) calc(var(--dm-line-height) * 1em - 1px) calc(var(--dm-line-height) * 1em));
+  background-position: 0 0, 0 1.05em;
+  color: var(--dm-wheat-text);
+  border: none; outline: none;
+  border-radius: 4px 4px 4px 22px;
+  padding: 1em 3.2em 1em 1.3em !important;
+  box-shadow: 0 1px 0 rgba(var(--callout-color), .3), 0 18px 30px -22px rgba(0, 0, 0, .6);
+}
+.callout[data-callout="lined"]::after, .callout[data-callout="lined"]::before { display: none; }
+.callout[data-callout="lined"] .callout-content p { margin: 0; }
+
+/* [!lined] in left-to-right notes: the margin rule moves to the left edge */
+.callout[data-callout="lined"]:dir(ltr) {
+  background-image:
+    linear-gradient(to right, transparent 2.4em, rgba(var(--dm-umber-rgb), .55) 2.4em, rgba(var(--dm-umber-rgb), .55) calc(2.4em + 1px), transparent calc(2.4em + 1px), transparent calc(2.4em + 4px), rgba(var(--dm-umber-rgb), .35) calc(2.4em + 4px), rgba(var(--dm-umber-rgb), .35) calc(2.4em + 5px), transparent calc(2.4em + 5px)),
+    repeating-linear-gradient(to bottom, transparent 0 calc(var(--dm-line-height) * 1em - 1px), rgba(var(--callout-color), .4) calc(var(--dm-line-height) * 1em - 1px) calc(var(--dm-line-height) * 1em));
+  border-radius: 4px 4px 22px 4px;
+  padding: 1em 1.3em 1em 3.2em !important;
+}

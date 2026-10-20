@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/build.mjs
+      - name: theme.css is up to date
+        run: git diff --exit-code theme.css
+      - name: The theme store files are in place
+        run: |
+          test -f manifest.json && test -f theme.css && test -f screenshot.png
+          node -e "const m=require('./manifest.json'); for (const k of ['name','version','minAppVersion','author']) if(!m[k]) throw new Error('manifest is missing ' + k)"

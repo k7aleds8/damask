@@ -1,0 +1,122 @@
+.callout {
+  --callout-color: var(--dm-accent-rgb);
+  --dm-c: rgb(var(--callout-color));
+  --dm-c-deep: color-mix(in srgb, rgb(var(--callout-color)) 72%, #000);
+  position: relative;
+  isolation: isolate;
+  margin: 2.3em 0 1.6em;
+  padding: 1.75em 1.5em 1.15em;
+  border-radius: 18px;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(165deg, rgba(var(--callout-color), .14), rgba(var(--callout-color), .035) 42%, rgba(var(--callout-color), .07)) padding-box,
+    linear-gradient(var(--dm-bg), var(--dm-bg)) padding-box,
+    linear-gradient(135deg, rgba(var(--callout-color), .95), rgba(var(--callout-color), .14) 32%, rgba(var(--callout-color), .10) 68%, rgba(var(--callout-color), .75)) border-box;
+  outline: 1px solid rgba(var(--callout-color), .13);
+  outline-offset: -7px;
+  box-shadow: 0 22px 44px -26px rgba(0, 0, 0, .65), 0 1px 0 rgba(255, 255, 255, .04) inset;
+  mix-blend-mode: normal;
+}
+body.dm-flat-ui .callout { box-shadow: none; }
+.theme-light .callout { box-shadow: 0 16px 30px -24px rgba(0, 0, 0, .35); }
+
+/* girih watermark fading out of the far corner */
+.callout::after {
+  content: "";
+  position: absolute; inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: rgb(var(--callout-color));
+  opacity: .11;
+  -webkit-mask: var(--dm-mask-girih) 0 0 / 46px 46px repeat, radial-gradient(110% 120% at 0 100%, #000, transparent 55%);
+  -webkit-mask-composite: source-in;
+  mask: var(--dm-mask-girih) 0 0 / 46px 46px repeat, radial-gradient(110% 120% at 0 100%, #000, transparent 55%);
+  mask-composite: intersect;
+}
+/* arabesque corner at the reading-start top corner */
+.callout::before {
+  content: "";
+  position: absolute;
+  bottom: 9px; inset-inline-start: 9px;
+  width: 30px; height: 30px;
+  background: rgb(var(--callout-color));
+  opacity: .5;
+  -webkit-mask: var(--dm-mask-corner) center / contain no-repeat;
+  mask: var(--dm-mask-corner) center / contain no-repeat;
+  transform: rotate(180deg);
+  pointer-events: none;
+}
+
+/* the ribbon title that cuts through the frame */
+.callout > .callout-title {
+  position: absolute;
+  top: 0;
+  inset-inline-start: 1.1em;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: .55em;
+  max-width: calc(100% - 3em);
+  padding: .22em 1.1em .22em .3em;
+  padding-inline-start: .28em;
+  padding-inline-end: 1.15em;
+  border-radius: 999px;
+  background: linear-gradient(to left, var(--dm-c), var(--dm-c-deep));
+  color: var(--dm-on-accent);
+  font-size: .9em;
+  letter-spacing: 0;
+  box-shadow: 0 0 0 5px var(--dm-bg), 0 8px 18px -8px rgba(var(--callout-color), .9);
+}
+.callout > .callout-title .callout-title-inner { font-weight: 700; color: var(--dm-on-accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.callout > .callout-title .callout-fold { color: var(--dm-on-accent); opacity: .8; padding: 0; }
+/* khatam medallion that holds the icon */
+.callout > .callout-title .callout-icon {
+  position: relative;
+  isolation: isolate;
+  flex: none;
+  display: grid; place-items: center;
+  width: 1.95em; height: 1.95em;
+  color: var(--dm-c);
+}
+.callout > .callout-title .callout-icon::before {
+  content: "";
+  position: absolute; inset: -1px;
+  z-index: -1;
+  background: var(--dm-on-accent);
+  -webkit-mask: var(--dm-mask-khatam) center / contain no-repeat;
+  mask: var(--dm-mask-khatam) center / contain no-repeat;
+}
+.callout > .callout-title .callout-icon .svg-icon { width: 15px; height: 15px; stroke-width: 2.2; }
+.callout-content { position: relative; z-index: 1; }
+.callout-content > :first-child { margin-top: 0; }
+.callout-content > :last-child { margin-bottom: 0; }
+
+
+/* ---- Obsidian runtime fixes: callouts must not clip ribbons/medallions ---- */
+/* margins of a callout must stay inside its block wrapper, otherwise the wrapper clips the ribbon */
+.markdown-preview-section > div:has(> .callout),
+.markdown-rendered div:has(> .callout),
+.callout-content:has(> .callout) { display: flow-root; }
+.markdown-preview-section > div:has(> .callout) { padding-top: 2px; overflow: visible !important; contain: none !important; }
+body { --callout-blend-mode: normal; }
+.callout, .markdown-rendered .callout, .cm-embed-block .callout { overflow: visible !important; mix-blend-mode: normal !important; }
+.cm-embed-block.cm-callout, .markdown-source-view.mod-cm6 .cm-callout { overflow: visible !important; padding-top: 6px; }
+.markdown-source-view.mod-cm6 .cm-callout .edit-block-button { top: 6px; inset-inline-end: 6px; z-index: 4; }
+.callout-content { overflow-x: visible; }
+
+/* palette-aware recolouring of the built-in types */
+.callout[data-callout="note"], .callout[data-callout="info"], .callout[data-callout="todo"],
+.callout[data-callout="tip"], .callout[data-callout="hint"], .callout[data-callout="important"],
+.callout[data-callout="success"], .callout[data-callout="check"], .callout[data-callout="done"] { --callout-color: var(--dm-forest-rgb); }
+.callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"],
+.callout[data-callout="question"], .callout[data-callout="help"], .callout[data-callout="faq"] { --callout-color: var(--dm-wheat-rgb); }
+.callout[data-callout="danger"], .callout[data-callout="error"], .callout[data-callout="bug"],
+.callout[data-callout="failure"], .callout[data-callout="fail"], .callout[data-callout="missing"] { --callout-color: var(--dm-umber-rgb); }
+.callout[data-callout="example"], .callout[data-callout="abstract"], .callout[data-callout="summary"], .callout[data-callout="tldr"] { --callout-color: var(--dm-accent2-rgb); }
+
+/* decorative callouts hide the auto title unless metadata says |title */
+.callout:is([data-callout="quote"], [data-callout="cite"], [data-callout="ayah"], [data-callout="poem"], [data-callout="lined"], [data-callout="box"]):not([data-callout-metadata~="title"]) > .callout-title { display: none; }
+.callout:is([data-callout="ayah"], [data-callout="poem"], [data-callout="lined"], [data-callout="box"]):not([data-callout-metadata~="title"]) { padding-top: 1.2em; }
+.callout:dir(ltr) > .callout-title { background: linear-gradient(to right, var(--dm-c), var(--dm-c-deep)); }

@@ -1,0 +1,54 @@
+.markdown-rendered, .markdown-source-view.mod-cm6 .cm-scroller {
+  font-feature-settings: "kern", "liga", "calt";
+  text-rendering: optimizeLegibility;
+}
+body.dm-justify .markdown-rendered p,
+body.dm-justify .markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-header):not(.HyperMD-codeblock) { text-align: justify; }
+
+.markdown-rendered strong, .cm-strong { color: var(--bold-color); font-weight: 700; }
+.markdown-rendered em, .cm-em { color: var(--italic-color); }
+
+/* highlighter-pen marks */
+.markdown-rendered mark, .cm-s-obsidian span.cm-highlight {
+  color: inherit;
+  background: linear-gradient(to top, color-mix(in srgb, #b9a779 50%, transparent) 0 45%, transparent 45%);
+  padding: 0 .15em;
+  border-radius: 2px;
+}
+
+/* inline code */
+.markdown-rendered :not(pre) > code, .cm-s-obsidian span.cm-inline-code {
+  color: var(--dm-accent);
+  background: color-mix(in srgb, var(--dm-accent) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--dm-accent) 20%, transparent);
+  border-radius: 6px;
+  padding: .05em .35em;
+  font-size: .86em;
+  direction: ltr;
+  unicode-bidi: isolate;
+  font-variant-ligatures: none;
+}
+code, pre, .cm-inline-code, .HyperMD-codeblock { font-variant-ligatures: none; font-feature-settings: "liga" 0, "calt" 0; }
+.markdown-rendered pre {
+  border: 1px solid var(--dm-border);
+  border-radius: 12px;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--dm-text) 4%, transparent);
+}
+
+/* links */
+.markdown-rendered a.internal-link, .cm-hmd-internal-link { text-underline-offset: 4px; text-decoration-color: color-mix(in srgb, var(--dm-accent) 40%, transparent); }
+.markdown-rendered a.internal-link:hover { text-decoration-color: var(--dm-accent); }
+
+/* tags */
+a.tag, .cm-hashtag { font-size: .82em; font-weight: 500; }
+
+/* lists */
+.markdown-rendered ul > li::marker { color: var(--dm-accent); }
+.markdown-rendered ol > li::marker { color: var(--dm-accent); font-weight: 700; }
+
+/* checkboxes */
+input[type=checkbox] { border-width: 1.6px; }
+.markdown-rendered .task-list-item.is-checked, .markdown-source-view .HyperMD-task-line[data-task="x"] { color: var(--dm-faint); }
+
+/* images */
+.markdown-rendered img:not(.excalidraw-svg):not([class*="excalidraw"]) { border-radius: 12px; }

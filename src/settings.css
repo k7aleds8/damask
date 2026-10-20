@@ -1,0 +1,150 @@
+/* @settings
+name: Damascene
+id: damascene-theme
+settings:
+  - id: dm-palette
+    title: Palette
+    title.ar: الألوان
+    title.fr: Palette
+    title.es: Paleta
+    title.tr: Renk paleti
+    type: heading
+    level: 2
+    collapsed: false
+  - id: dm-dark-palette
+    title: Dark mode palette
+    title.ar: ألوان الوضع الداكن
+    title.fr: Palette du mode sombre
+    title.es: Paleta del modo oscuro
+    title.tr: Koyu mod paleti
+    type: class-select
+    allowEmpty: false
+    default: dm-dark-forest
+    options:
+      - label: Forest
+        value: dm-dark-forest
+      - label: Charcoal
+        value: dm-dark-charcoal
+      - label: Umber
+        value: dm-dark-umber
+      - label: Midnight
+        value: dm-dark-midnight
+  - id: dm-light-palette
+    title: Light mode palette
+    title.ar: ألوان الوضع الفاتح
+    title.fr: Palette du mode clair
+    title.es: Paleta del modo claro
+    title.tr: Açık mod paleti
+    type: class-select
+    allowEmpty: false
+    default: dm-light-wheat
+    options:
+      - label: Wheat
+        value: dm-light-wheat
+      - label: Paper
+        value: dm-light-paper
+      - label: Daylight
+        value: dm-light-daylight
+  - id: dm-typography
+    title: Reading
+    title.ar: القراءة والكتابة
+    title.fr: Lecture
+    title.es: Lectura
+    title.tr: Okuma
+    type: heading
+    level: 2
+    collapsed: false
+  - id: dm-font-text
+    title: Text font
+    title.ar: خط النص
+    title.fr: Police du texte
+    title.es: Fuente del texto
+    title.tr: Metin yazı tipi
+    description: Ships with Qomra Arabic. Type any installed font name to replace it.
+    description.ar: الخط المرفق هو «قمرة». اكتب اسم أي خط مثبّت لديك لاستبداله.
+    description.fr: Qomra Arabic est inclus. Saisissez le nom d’une police installée pour la remplacer.
+    description.es: Incluye Qomra Arabic. Escribe el nombre de cualquier fuente instalada para cambiarla.
+    description.tr: Qomra Arabic ile birlikte gelir. Değiştirmek için yüklü bir yazı tipinin adını yazın.
+    type: variable-text
+    default: "'itf Qomra Arabic'"
+  - id: dm-font-ui
+    title: Interface font
+    title.ar: خط الواجهة
+    title.fr: Police de l’interface
+    title.es: Fuente de la interfaz
+    title.tr: Arayüz yazı tipi
+    type: variable-text
+    default: "'itf Qomra Arabic'"
+  - id: dm-line-height
+    title: Line height
+    title.ar: تباعد الأسطر
+    title.fr: Interligne
+    title.es: Interlineado
+    title.tr: Satır aralığı
+    type: variable-number-slider
+    default: 1.9
+    min: 1.4
+    max: 2.4
+    step: 0.05
+  - id: dm-line-width
+    title: Readable line width
+    title.ar: عرض السطر المقروء
+    title.fr: Largeur de lecture
+    title.es: Ancho de lectura
+    title.tr: Okuma genişliği
+    type: variable-number-slider
+    default: 46
+    min: 30
+    max: 80
+    step: 1
+    format: rem
+  - id: dm-lined-all
+    title: Ruled paper in every note
+    title.ar: سطور الدفتر في كل الملاحظات
+    title.fr: Papier ligné dans toutes les notes
+    title.es: Papel rayado en todas las notas
+    title.tr: Tüm notlarda çizgili kâğıt
+    description: Faint notebook lines behind the text. Use the dm-lined cssclass for a single note.
+    description.ar: خطوط أفقية خفيفة خلف النص كالدفتر. لملاحظة واحدة استخدم الصنف dm-lined.
+    description.fr: De fines lignes de cahier derrière le texte. Pour une seule note, utilisez la cssclass dm-lined.
+    description.es: Líneas de cuaderno suaves detrás del texto. Para una sola nota, usa la cssclass dm-lined.
+    description.tr: Metnin arkasında silik defter çizgileri. Tek bir not için dm-lined cssclass'ını kullanın.
+    type: class-toggle
+  - id: dm-plain-headings
+    title: Plain headings
+    title.ar: عناوين بلا زخارف
+    title.fr: Titres sans ornements
+    title.es: Encabezados sin adornos
+    title.tr: Süssüz başlıklar
+    type: class-toggle
+  - id: dm-justify
+    title: Justify paragraphs
+    title.ar: ضبط النص من الطرفين
+    title.fr: Justifier les paragraphes
+    title.es: Justificar párrafos
+    title.tr: Paragrafları iki yana yasla
+    type: class-toggle
+  - id: dm-ui
+    title: Interface
+    title.ar: الواجهة
+    title.fr: Interface
+    title.es: Interfaz
+    title.tr: Arayüz
+    type: heading
+    level: 2
+    collapsed: true
+  - id: dm-flat-ui
+    title: Flat interface (no shadows)
+    title.ar: واجهة مسطّحة بلا ظلال
+    title.fr: Interface plate (sans ombres)
+    title.es: Interfaz plana (sin sombras)
+    title.tr: Düz arayüz (gölgesiz)
+    type: class-toggle
+  - id: dm-colorful-ribbon
+    title: Colorful ribbon icons
+    title.ar: أيقونات ملوّنة في الشريط الجانبي
+    title.fr: Icônes colorées dans le ruban
+    title.es: Iconos de colores en la cinta
+    title.tr: Renkli şerit simgeleri
+    type: class-toggle
+*/

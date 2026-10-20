@@ -1,0 +1,29 @@
+name: Bug report
+description: Something in the theme doesn't look right
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you expected and what you saw instead. A screenshot helps a lot.
+    validations:
+      required: true
+  - type: dropdown
+    id: palette
+    attributes:
+      label: Palette
+      options: [Forest night, Charcoal & wheat, Umber night, Midnight, Wheat paper, White paper, Forest day]
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      placeholder: Obsidian 1.x, Damascene 2.x, OS, desktop or mobile
+    validations:
+      required: true
+  - type: textarea
+    id: plugins
+    attributes:
+      label: Other themes' snippets or plugins that change styling
+      description: Style Settings, CSS snippets, Minimal Theme Settings, and so on.

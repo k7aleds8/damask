@@ -1,0 +1,17 @@
+{
+  "name": "damascene",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Damascene, an Obsidian theme drawn from the colours of old Damascus",
+  "license": "MIT",
+  "author": "k7aleds8",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build.mjs --watch --deploy",
+    "build": "node scripts/build.mjs",
+    "deploy": "node scripts/build.mjs --deploy",
+    "demo": "node scripts/make-demo-vault.mjs",
+    "mockups": "node scripts/render-mockups.mjs",
+    "version": "node scripts/version-bump.mjs && npm run build && git add manifest.json theme.css"
+  }
+}
