@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.2
+
+- New name: **Damask**, the English word for the silk first woven in Damascus. The README
+  explains the name and the colours. Nothing in your notes needs to change: classes and
+  variables keep the `dm-` prefix.
+- Style Settings opens with a short note about the companion plugin, Damask Studio.
+- README in Arabic, French, Spanish and Turkish, each with a translated showcase note.
+
 ## 2.0.1
 
 - Light palettes: warning and question callouts now use a clear ochre gold, so they no
@@ -11,7 +19,7 @@
 
 First public release, renamed from Qomra.
 
-- New name: **Damascene**. Classes and variables now use the `dm-` prefix.
+- New name: **Damascene** (Damask since 2.0.2). Classes and variables now use the `dm-` prefix.
 - Seven palettes — four dark, three light — picked in Style Settings.
 - Text and interface fonts are configurable; itf Qomra Arabic stays the default.
 - Ornaments mirror correctly in left-to-right notes.

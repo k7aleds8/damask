@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="docs/screenshots/hero.png" alt="Damascene on a laptop and a phone: an English note in Forest night and an Arabic note in Umber night" width="100%">
+**English** · [العربية](README.ar.md) · [Français](README.fr.md) · [Español](README.es.md) · [Türkçe](README.tr.md)
+
+<img src="docs/screenshots/hero.png" alt="Damask on a laptop and a phone: an English note in Forest night and an Arabic note in Umber night" width="100%">
 
 <br>
 
@@ -11,38 +13,68 @@ calm enough for long writing, ornamented enough to feel like a place.
 
 <br>
 
-[![Version](https://img.shields.io/badge/version-2.0.1-b9a779?style=flat-square&labelColor=002623)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.0.2-b9a779?style=flat-square&labelColor=002623)](CHANGELOG.md)
 [![Obsidian](https://img.shields.io/badge/Obsidian-1.5%2B-7ea69c?style=flat-square&labelColor=002623&logo=obsidian&logoColor=edebe0)](https://obsidian.md)
 [![Modes](https://img.shields.io/badge/dark%20·%20light-7%20palettes-a67b7c?style=flat-square&labelColor=002623)](#palettes)
 [![License](https://img.shields.io/badge/license-MIT-edebe0?style=flat-square&labelColor=002623)](LICENSE)
 
-**[Overview](#overview) · [The colours](#the-colours) · [Palettes](#palettes) · [Writing](#writing-surfaces) · [Arabic](#arabic-first) · [Install](#install) · [Callouts](#callout-reference) · [FAQ](#faq)**
+✦ **Get more from Damask** with its companion plugin, [**Damask Studio**](https://github.com/k7aleds8/damask-studio):<br>
+insert any callout from a gallery, preview every palette live, and turn a note into a home dashboard.
+
+**[Get started](#get-started) · [Overview](#overview) · [The name](#why-damask) · [The colours](#the-colours) · [Palettes](#palettes) · [Writing](#writing-surfaces) · [Arabic](#arabic-first) · [Callouts](#callout-reference) · [FAQ](#faq)**
 
 </div>
 
 <br>
 
+## Get started
+
+Damask works the moment you switch to it: the typeface, the ornaments, the callouts and the two default palettes, *Forest night* and *Wheat paper*, need nothing else. Three steps show you the rest.
+
+1. **Install Style Settings** for the palettes and options.
+   *Settings → Community plugins → Browse →* [**Style Settings**](https://github.com/mgmeyers/obsidian-style-settings), then *Settings → Style Settings → Damask*. Pick any of the seven palettes and set the line height, line width, ruled paper, plain headings and more. Themes can't add a settings page of their own, so this is how every Obsidian theme exposes its options.
+2. **Open the showcase note** to see every feature at once.
+   Download [**Damask showcase.md**](https://raw.githubusercontent.com/k7aleds8/damask/main/docs/Damask%20showcase.md) (right-click → *Save link as*) into your vault, or [read it here](docs/Damask%20showcase.md). It shows each quote, verse, poem, panel, divider and callout next to the Markdown that makes it, ready to copy.
+3. **Add Damask Studio** (recommended). The [companion plugin](https://github.com/k7aleds8/damask-studio) is the easiest way to use everything above: it inserts any block from a gallery in one click, picks palettes with live previews, and adds a home dashboard. *Settings → Community plugins → Browse → Damask Studio*.
+
+> [!TIP]
+> The typeface, itf Qomra Arabic, is built in. To use a different one, set it in *Settings → Appearance → Font*; no plugin needed.
+
 ## Overview
 
 **Calm.** Generous line height, a readable measure and warm, low-contrast colours keep the page quiet. Nothing on screen competes with what you are writing.
 
-**Ornamented, never busy.** Headings carry a fading rule and a diamond, quotes sit in an illuminated margin, dividers become small pieces of inlay. The ornaments follow the geometry of Damascene craft — the eight-point *khatam* star and the *girih* lattice — and stay out of the way of the text.
+**Ornamented, never busy.** Headings carry a fading rule and a diamond, quotes sit in an illuminated margin, dividers become small pieces of inlay. The ornaments follow the geometry of Damascus craft — the eight-point *khatam* star and the *girih* lattice — and stay out of the way of the text.
 
-**Bilingual by birth.** Damascene was designed for Arabic and Latin script at the same time. Right-to-left notes are laid out right-to-left, not mirrored after the fact, and the theme's settings are written in five languages.
+**Bilingual by birth.** Damask was designed for Arabic and Latin script at the same time. Right-to-left notes are laid out right-to-left, not mirrored after the fact, and the theme's settings are written in five languages.
 
 **Complete on its own.** No plugin is required. Palettes and options live in [Style Settings](https://github.com/mgmeyers/obsidian-style-settings), and everything else works the moment you switch to the theme.
 
 <br>
 
-<img src="docs/screenshots/devices.png" alt="Damascene on a laptop in Forest night, a tablet in Wheat paper and a phone in Umber night" width="100%">
+<img src="docs/screenshots/devices.png" alt="Damask on a laptop in Forest night, a tablet in Wheat paper and a phone in Umber night" width="100%">
 
 <br>
+
+## Why Damask
+
+**Damask** is an English word that comes straight from Damascus. Medieval traders brought home a silk woven in the city, and Europe named it after the place: *damasco* in Italian, *damas* in French, *damask* in English.
+
+A damask cloth has a pattern you only see when the light catches it. The motif is woven into the fabric itself, glossy threads against matte ones in a single colour, so it shows when you look closely and disappears when you don't. That is exactly what this theme tries to do: its ornaments are drawn in low contrast, close to the colour of the page, so they are there for the eye that looks for them and quiet for the eye that is reading.
+
+The word carries more of the city too:
+
+- **The Damask rose** (*Rosa × damascena*) grows in the courtyards of Damascus and gives the theme its rose colour.
+- **Damask** is also an old English name for a deep rose-pink, the colour of that rose.
+- **Damask steel**, the watered blades of Damascus, has the same rippled, hidden pattern.
+
+In Arabic it is **الدامسكو** (*damasko*), the name the Levant still uses for this fabric. Short, easy to say in every language, and unmistakably from Damascus. The theme was briefly published as *Damascene*; it is the same theme under a name that is easier to remember.
 
 ## The colours
 
 <img src="docs/screenshots/colours.png" alt="Seven colour swatches: wheat gold, Ghouta green, Barada sage, Damask rose, walnut umber, basalt and limestone" width="100%">
 
-Every colour in Damascene has a place in the city it is named after.
+Every colour in Damask has a place in the city it is named after.
 
 | | Colour | Hex | Where it comes from | Where you'll see it |
 |---|---|---|---|---|
@@ -50,7 +82,7 @@ Every colour in Damascene has a place in the city it is named after.
 | <img src="docs/screenshots/swatches/002623.png" width="22" alt=""> | **Ghouta green** | `#002623` | The orchards that ring Damascus, at the hour the lamps come on | The *Forest* backgrounds; ink in light mode |
 | <img src="docs/screenshots/swatches/7ea69c.png" width="22" alt=""> | **Barada sage** | `#7EA69C` | The river Barada, and the patina on old copper basins | H2, secondary accents, the *Midnight* palette |
 | <img src="docs/screenshots/swatches/a67b7c.png" width="22" alt=""> | **Damask rose** | `#A67B7C` | The rose that carries the city's name | Tertiary accents, the *Umber* palette |
-| <img src="docs/screenshots/swatches/260f14.png" width="22" alt=""> | **Walnut umber** | `#260F14` | Carved walnut and the inlaid wood of Damascene reception rooms | The *Umber night* background |
+| <img src="docs/screenshots/swatches/260f14.png" width="22" alt=""> | **Walnut umber** | `#260F14` | Carved walnut and the inlaid wood of Damascus reception rooms | The *Umber night* background |
 | <img src="docs/screenshots/swatches/161616.png" width="22" alt=""> | **Basalt** | `#161616` | The black stone of *ablaq* walls, laid in alternating rows… | The *Charcoal* and *Midnight* backgrounds |
 | <img src="docs/screenshots/swatches/edebe0.png" width="22" alt=""> | **Limestone** | `#EDEBE0` | …with the pale stone that answers it | Text in dark mode; the *Wheat paper* background |
 
@@ -67,7 +99,7 @@ Light palettes swap the roles: paper becomes the ground, and forest green and a 
 | **Umber night** | Old walnut panelling and the Damask rose | **Forest day** | Pale green light through a courtyard's leaves |
 | **Midnight** | Charcoal under the sage of the Barada | | |
 
-Choose one for each mode in **Settings → Style Settings → Damascene**. Obsidian switches between your dark and light choice with the system, as usual.
+Choose one for each mode in **Settings → Style Settings → Damask**, or from the **Theme** tab of [Damask Studio](https://github.com/k7aleds8/damask-studio), which previews every palette live. Obsidian switches between your dark and light choice with the system, as usual.
 
 ## Writing surfaces
 
@@ -95,7 +127,7 @@ Choose one for each mode in **Settings → Style Settings → Damascene**. Obsid
 
 <img src="docs/screenshots/rtl.png" alt="An English note and an Arabic note side by side; the Arabic one is laid out right to left" width="100%">
 
-Damascene ships with **itf Qomra Arabic**, a typeface with real Arabic and Latin designs, so a note that mixes both scripts reads as one voice. Notes written in Arabic are laid out right-to-left — headings, quotes, callouts, poem columns and lists — while English notes in the same vault stay left-to-right. Ornaments that point somewhere (rules, bars, quote marks) point the right way in both.
+Damask ships with **itf Qomra Arabic**, a typeface with real Arabic and Latin designs, so a note that mixes both scripts reads as one voice. Notes written in Arabic are laid out right-to-left — headings, quotes, callouts, poem columns and lists — while English notes in the same vault stay left-to-right. Ornaments that point somewhere (rules, bars, quote marks) point the right way in both.
 
 Prefer another face? Type any installed font's name in the theme's font fields, or set it in Obsidian's Appearance settings, which always win.
 
@@ -107,13 +139,13 @@ The same palettes, ornaments and callouts work on iPhone, Android and iPad. On s
 
 ## Install
 
-**From Obsidian** — *Settings → Appearance → Themes → Manage*, search for **Damascene**, then *Install and use*. Install **Style Settings** too if you want to change palettes and options.
+**From Obsidian** — *Settings → Appearance → Themes → Manage*, search for **Damask**, then *Install and use*. Install **Style Settings** too if you want to change palettes and options.
 
-**By hand** — download `theme.css` and `manifest.json` from the [latest release](https://github.com/k7aleds8/damascene/releases) into `.obsidian/themes/Damascene/`, then pick Damascene in *Settings → Appearance*.
+**By hand** — download `theme.css` and `manifest.json` from the [latest release](https://github.com/k7aleds8/damask/releases) into `.obsidian/themes/Damask/`, then pick Damask in *Settings → Appearance*.
 
 ## Theme options
 
-Everything below lives in **Style Settings → Damascene**, written in English, Arabic, French, Spanish and Turkish.
+Everything below lives in **Style Settings → Damask**, written in English, Arabic, French, Spanish and Turkish.
 
 | Option | Default |
 |---|---|
@@ -149,7 +181,7 @@ Obsidian's own types — `note`, `tip`, `warning`, `danger` and the rest — are
 <br>
 
 ```markdown
-> [!poem] Ahmad Shawqi
+> [!poem|title] Ahmad Shawqi
 > - سلامٌ من صَبا بَرَدى أرقُّ
 > - ودمعٌ لا يُكفكَفُ يا دمشقُ
 
@@ -159,7 +191,7 @@ Obsidian's own types — `note`, `tip`, `warning`, `danger` and the rest — are
 > [!box|forest]
 > Forest green, wheat gold, basalt and walnut: the four colours of the city.
 
-> [!lined] A note to self
+> [!lined|title] A note to self
 > Jasmine blooms from May to October; its best hour is just after sunset.
 ```
 
@@ -186,17 +218,27 @@ Every palette sets the same `--dm-*` variables, so a CSS snippet written against
 
 ## Companion plugin
 
-<img src="docs/screenshots/home.png" alt="The Damascene Studio home dashboard" width="100%">
+<img src="docs/screenshots/home.png" alt="The Damask Studio home dashboard" width="100%">
 
-The theme needs nothing else. If you want more, **[Damascene Studio](https://github.com/k7aleds8/damascene-studio)** is an optional plugin built around it: a live home dashboard, a block gallery for every callout above, an embed layout editor, folder colours, a focus timer, habits, and a palette picker with live previews. It lives in its own repository.
+The theme needs nothing else, but it was designed together with **[Damask Studio](https://github.com/k7aleds8/damask-studio)**, and the two are best used side by side. The plugin adds:
+
+- **A block gallery** — every quote, verse, poem, panel and divider above, inserted with one click or by typing `;;` in a note.
+- **A palette picker** with live previews of all seven palettes, no Style Settings needed.
+- **A home dashboard** — greeting, quote of the day, habits, tasks, focus statistics and vault activity.
+- **Embed layouts, folder and heading colours, a focus timer and a health check**, each with its own switch.
+
+**Install:** *Settings → Community plugins → Browse →* search **Damask Studio** → *Install* → *Enable*.
 
 ## FAQ
 
 **Do I need a plugin?**
-No. The theme is complete on its own; Style Settings is only needed to change palettes and options.
+No. The theme is complete on its own; Style Settings is only needed to change palettes and options. For the fullest experience we recommend adding [Damask Studio](https://github.com/k7aleds8/damask-studio).
+
+**I installed it when it was called Damascene.**
+Install **Damask** from the theme browser and switch to it; it is the same theme. Damask Studio picks up the settings of the earlier Damascene Studio on its own, and old `damascene-home` blocks keep working.
 
 **I used Qomra.**
-Switch to Damascene: the palettes and callouts are the same, and the classes now start with `dm-` instead of `qm-`. Rename `qm-` cssclasses in your notes, or let Damascene Studio's health check do it for you.
+Switch to Damask: the palettes and callouts are the same, and the classes now start with `dm-` instead of `qm-`. Rename `qm-` cssclasses in your notes, or let Damask Studio's health check do it for you.
 
 **Can I use my own font?**
 Yes. Type its name in the font fields in Style Settings, or set it in Obsidian's Appearance settings, which take priority.
@@ -206,7 +248,7 @@ From a sample vault in this repository, so no one's personal notes appear here. 
 
 ## Credits
 
-Made by [k7aleds8](https://github.com/k7aleds8). The ornaments follow the geometry of Damascene woodwork and tile: the eight-point *khatam* and the *girih* lattice.
+Made by [k7aleds8](https://github.com/k7aleds8). The ornaments follow the geometry of Damascus woodwork and tile: the eight-point *khatam* and the *girih* lattice.
 
 - **Font:** *itf Qomra Arabic* by Indian Type Foundry is licensed separately and is not covered by this repository's MIT licence. See [fonts/NOTICE.md](fonts/NOTICE.md).
 - **Quotes in the screenshots:** Gertrude Jekyll and Kahlil Gibran; the poem is by Ahmad Shawqi (1868–1932).

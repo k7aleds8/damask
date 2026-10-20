@@ -1,6 +1,6 @@
 // Builds theme.css from the partials in src/ with the fonts embedded.
 // --watch rebuilds on change, --deploy copies the theme into a vault whose
-// path comes from DAMASCENE_VAULT or a one-line .vault-path file.
+// path comes from DAMASK_VAULT or a one-line .vault-path file.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -50,7 +50,7 @@ function fontCss() {
 
 function build() {
   const { version } = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8'));
-  const header = `/* Damascene ${version} — https://github.com/k7aleds8/damascene */\n\n`;
+  const header = `/* Damask ${version} — https://github.com/k7aleds8/damask */\n\n`;
   const [settings, ...rest] = PARTS.map((p) => fs.readFileSync(path.join(root, 'src', p), 'utf8').trimEnd());
   fs.writeFileSync(path.join(root, 'theme.css'), header + [settings, fontCss(), ...rest].join('\n\n') + '\n');
   console.log('built theme.css');
@@ -58,13 +58,13 @@ function build() {
 }
 
 function copyToVault() {
-  const vault = process.env.DAMASCENE_VAULT
+  const vault = process.env.DAMASK_VAULT
     ?? (fs.existsSync(path.join(root, '.vault-path')) ? fs.readFileSync(path.join(root, '.vault-path'), 'utf8').trim() : null);
   if (!vault) {
-    console.warn('deploy skipped: set DAMASCENE_VAULT or create .vault-path');
+    console.warn('deploy skipped: set DAMASK_VAULT or create .vault-path');
     return;
   }
-  const target = path.join(vault, '.obsidian', 'themes', 'Damascene');
+  const target = path.join(vault, '.obsidian', 'themes', 'Damask');
   fs.mkdirSync(target, { recursive: true });
   for (const f of ['theme.css', 'manifest.json']) fs.copyFileSync(path.join(root, f), path.join(target, f));
   console.log(`deployed to ${vault}`);

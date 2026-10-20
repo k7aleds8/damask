@@ -1,7 +1,20 @@
 /* @settings
-name: Damascene
-id: damascene-theme
+name: Damask
+id: damask-theme
 settings:
+  - id: dm-studio-tip
+    title: Get more from Damask
+    title.ar: استفد من Damask أكثر
+    title.fr: Tirez le meilleur de Damask
+    title.es: Saca más partido a Damask
+    title.tr: Damask'den daha fazlasını alın
+    description: "Install the companion plugin Damask Studio for a one-click gallery of every callout, live palette previews and a home dashboard. Settings → Community plugins → Browse → Damask Studio."
+    description.ar: "ثبّت الإضافة المرافقة Damask Studio لتحصل على معرض يُدرج كل المربعات بنقرة، ومعاينة حيّة للوحات الألوان، ولوحة بداية لخزنتك. الإعدادات ← الإضافات المجتمعية ← تصفّح ← Damask Studio."
+    description.fr: "Installez le plugin compagnon Damask Studio : une galerie qui insère chaque encadré en un clic, l'aperçu en direct des palettes et un tableau de bord d'accueil. Paramètres → Plugins communautaires → Parcourir → Damask Studio."
+    description.es: "Instala el plugin complementario Damask Studio: una galería que inserta cada bloque con un clic, vista previa en vivo de las paletas y un panel de inicio. Ajustes → Plugins de la comunidad → Explorar → Damask Studio."
+    description.tr: "Tamamlayıcı eklenti Damask Studio'yu yükleyin: her bloğu tek tıkla ekleyen bir galeri, paletlerin canlı önizlemesi ve bir ana sayfa panosu. Ayarlar → Topluluk eklentileri → Göz at → Damask Studio."
+    type: info-text
+    markdown: false
   - id: dm-palette
     title: Palette
     title.ar: الألوان

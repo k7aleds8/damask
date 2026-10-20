@@ -191,7 +191,7 @@ const COLOURS = [
   ['Ghouta green', '#002623', 'The orchards that ring the city, at the hour the lamps come on.', '#edebe0'],
   ['Barada sage', '#7ea69c', 'River water, and the patina on old copper basins.', '#0e221e'],
   ['Damask rose', '#a67b7c', 'The rose that carries the city’s name.', '#1e0d0e'],
-  ['Walnut umber', '#260f14', 'Carved walnut and inlaid wood of Damascene rooms.', '#edebe0'],
+  ['Walnut umber', '#260f14', 'Carved walnut and inlaid wood of Damascus rooms.', '#edebe0'],
   ['Basalt', '#161616', 'The black stone of ablaq walls, laid in alternating rows…', '#edebe0'],
   ['Limestone', '#edebe0', '…with the pale stone that answers it.', '#1d1a10'],
 ];
@@ -200,7 +200,7 @@ const SCENES = {
   hero: { w: 1920, h: 960, html: `
 <div class="canvas bg-forest" style="width:1920px;height:960px">
   <div class="lattice"></div><div class="glow"></div>
-  <div class="brand" style="left:110px;top:84px">${khatam('#b9a779')}<div><div class="name">Damascene</div><div class="tag">An Obsidian theme drawn from the colours of old Damascus</div></div></div>
+  <div class="brand" style="left:110px;top:84px">${khatam('#b9a779')}<div><div class="name">Damask</div><div class="tag">An Obsidian theme drawn from the colours of old Damascus</div></div></div>
   <div class="chip" style="right:110px;top:98px"><span><b>Theme</b> &amp; <b>Studio</b> plugin for Obsidian</span></div>
   ${laptop('lap-forest', 1030, 'left:300px;top:226px')}
   ${phone('p1', 262, 'left:1318px;top:300px')}
@@ -213,6 +213,16 @@ const SCENES = {
   ${laptop('lap-forest', 920, 'left:500px;top:250px')}
   ${tablet('tab2', 640, 'left:120px;top:478px', true)}
   ${phone('p1', 232, 'left:1520px;top:420px')}
+</div>` },
+
+  // the companion plugin's page shows the dashboard on every device
+  'devices-studio': { w: 1920, h: 1000, html: `
+<div class="canvas bg-charcoal" style="width:1920px;height:1000px">
+  <div class="lattice"></div><div class="glow"></div>
+  ${heading('Damask Studio', 'Your vault, on every screen.', '', 'left:0;right:0;top:70px', 'center')}
+  ${laptop('lap-home', 920, 'left:500px;top:250px')}
+  ${tablet('tab1', 640, 'left:120px;top:478px', true)}
+  ${phone('p2', 232, 'left:1520px;top:420px')}
 </div>` },
 
   mobile: { w: 1920, h: 960, html: `
@@ -259,8 +269,16 @@ const SCENES = {
   home: { w: 1920, h: 1160, html: `
 <div class="canvas bg-charcoal" style="width:1920px;height:1160px">
   <div class="lattice"></div><div class="glow"></div>
-  ${heading('Damascene Studio', 'Your vault, at a glance.', '', 'left:0;right:0;top:56px', 'center')}
+  ${heading('Damask Studio', 'Your vault, at a glance.', '', 'left:0;right:0;top:56px', 'center')}
   ${win('lap-home', 1500, 'left:210px;top:210px')}
+</div>` },
+
+  // for the companion plugin's page
+  studio: { w: 1920, h: 1160, html: `
+<div class="canvas bg-forest" style="width:1920px;height:1160px">
+  <div class="lattice"></div><div class="glow"></div>
+  ${heading('Control panel', 'See an option before you change it.', '', 'left:0;right:0;top:56px', 'center')}
+  ${win('lap-studio', 1500, 'left:210px;top:210px')}
 </div>` },
 
 };

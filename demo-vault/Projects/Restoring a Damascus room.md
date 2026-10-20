@@ -2,7 +2,7 @@
 type: project
 status: active
 ---
-# Restoring a Damascene room
+# Restoring a Damascus room
 
 > [!box|outline] Brief
 > Bring an 18th-century reception room back to its original colours without repainting what can be cleaned.

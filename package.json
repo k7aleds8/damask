@@ -1,8 +1,8 @@
 {
-  "name": "damascene",
+  "name": "damask",
   "private": true,
-  "version": "2.0.1",
-  "description": "Damascene, an Obsidian theme drawn from the colours of old Damascus",
+  "version": "2.0.2",
+  "description": "Damask, an Obsidian theme drawn from the colours of old Damascus",
   "license": "MIT",
   "author": "k7aleds8",
   "type": "module",

@@ -19,7 +19,7 @@ body:
     id: versions
     attributes:
       label: Versions
-      placeholder: Obsidian 1.x, Damascene 2.x, OS, desktop or mobile
+      placeholder: Obsidian 1.x, Damask 2.x, OS, desktop or mobile
     validations:
       required: true
   - type: textarea

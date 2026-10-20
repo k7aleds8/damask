@@ -24,7 +24,7 @@ const json = (rel, obj) => write(rel, JSON.stringify(obj, null, 2) + '\n');
 /* ---------------------------------------------------------------- notes */
 
 write('Home.md', `
-\`\`\`damascene-home
+\`\`\`damask-home
 \`\`\`
 `);
 
@@ -119,12 +119,12 @@ created: ${day(-6)}
 > الياسمين يزهر من أيار حتى تشرين، وأجمل ساعاته بعد المغرب.
 `);
 
-write('Projects/Restoring a Damascene room.md', `
+write('Projects/Restoring a Damascus room.md', `
 ---
 type: project
 status: active
 ---
-# Restoring a Damascene room
+# Restoring a Damascus room
 
 > [!box|outline] Brief
 > Bring an 18th-century reception room back to its original colours without repainting what can be cleaned.
@@ -214,9 +214,9 @@ write('Assets/courtyard.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="
 
 /* ---------------------------------------------------------------- config */
 
-json('.obsidian/appearance.json', { cssTheme: 'Damascene', theme: 'obsidian', baseFontSize: 16 });
+json('.obsidian/appearance.json', { cssTheme: 'Damask', theme: 'obsidian', baseFontSize: 16 });
 json('.obsidian/app.json', { readableLineLength: true, showInlineTitle: false, attachmentFolderPath: 'Assets', alwaysUpdateLinks: true });
-json('.obsidian/community-plugins.json', ['damascene-studio']);
+json('.obsidian/community-plugins.json', ['damask-studio']);
 json('.obsidian/daily-notes.json', { folder: 'Journal/Daily', format: 'YYYY-MM-DD' });
 json('.obsidian/core-plugins.json', { 'file-explorer': true, 'global-search': true, switcher: true, 'daily-notes': true, 'page-preview': true, outline: true, bookmarks: true, 'word-count': true });
 
@@ -235,7 +235,7 @@ for (let i = -16; i <= 0; i++) {
     log.push({ id: `demo-${i}-${k}`, kind: 'pomo', start, end: start + 25 * 60e3, duration: 25 * 60, pause: 0, task: k % 2 ? 'Panel map' : 'Reading' });
   }
 }
-json('.obsidian/plugins/damascene-studio/data.json', {
+json('.obsidian/plugins/damask-studio/data.json', {
   firstRunDone: true,
   language: 'en',
   paths: { home: 'Home.md', dailyFolder: 'Journal/Daily', dailyFormat: 'YYYY-MM-DD', quotes: 'Library/Quotes', inbox: 'Inbox', templates: '', questions: '', excalidrawFont: '', excluded: [] },
