@@ -13,7 +13,7 @@ uzun yazılar için yeterince sakin, bir yerde olduğunuzu hissettirecek kadar s
 
 <br>
 
-[![Version](https://img.shields.io/badge/version-2.0.2-b9a779?style=flat-square&labelColor=002623)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.0.3-b9a779?style=flat-square&labelColor=002623)](CHANGELOG.md)
 [![Obsidian](https://img.shields.io/badge/Obsidian-1.5%2B-7ea69c?style=flat-square&labelColor=002623&logo=obsidian&logoColor=edebe0)](https://obsidian.md)
 [![Modes](https://img.shields.io/badge/dark%20·%20light-7%20palettes-a67b7c?style=flat-square&labelColor=002623)](#paletler)
 [![License](https://img.shields.io/badge/license-MIT-edebe0?style=flat-square&labelColor=002623)](LICENSE)
@@ -139,9 +139,9 @@ Aynı paletler, süslemeler ve bloklar iPhone, Android ve iPad'de de çalışır
 
 ## Kurulum
 
-**Obsidian içinden** — *Ayarlar → Görünüm → Temalar → Yönet*, **Damask**'ı arayın ve *Yükle ve kullan*'a basın. Paletleri ve seçenekleri değiştirmek isterseniz **Style Settings**'i de yükleyin.
+**Obsidian içinden** — *Ayarlar → Görünüm → Temalar → Yönet*, **Damascene**'i arayın ve *Yükle ve kullan*'a basın. Damask adına geçiş onaylanana kadar tema tarayıcısı onu ilk adıyla gösteriyor; aynı temadır. Paletleri ve seçenekleri değiştirmek isterseniz **Style Settings**'i de yükleyin.
 
-**Elle** — [son sürümden](https://github.com/k7aleds8/damask/releases) `theme.css` ve `manifest.json` dosyalarını `.obsidian/themes/Damask/` klasörüne indirin, ardından *Ayarlar → Görünüm* bölümünden Damask'ı seçin.
+**Elle** — [son sürümden](https://github.com/k7aleds8/damask/releases) `theme.css` ve `manifest.json` dosyalarını `.obsidian/themes/Damascene/` klasörüne indirin, ardından *Ayarlar → Görünüm* bölümünden Damascene'i seçin.
 
 ## Tema seçenekleri
 
@@ -235,7 +235,7 @@ Temanın başka hiçbir şeye ihtiyacı yok; ama **[Damask Studio](https://githu
 Hayır. Tema tek başına eksiksizdir; Style Settings yalnızca paletleri ve seçenekleri değiştirmek için gerekir. En dolu deneyim için [Damask Studio](https://github.com/k7aleds8/damask-studio)'yu eklemenizi öneririz.
 
 **Adı Damascene iken yüklemiştim.**
-Tema tarayıcısından **Damask**'ı yükleyip seçin; aynı temadır. Damask Studio, eski Damascene Studio'nun ayarlarını kendiliğinden alır ve eski `damascene-home` blokları çalışmaya devam eder.
+Bir şey yapmanıza gerek yok: aynı temadır ve güncellenmeye devam eder. Damask Studio, eski Damascene Studio'nun ayarlarını kendiliğinden alır ve eski `damascene-home` blokları çalışmaya devam eder.
 
 **Qomra kullanıyordum.**
 Damask'a geçin: paletler ve bloklar aynıdır, sınıflar artık `qm-` yerine `dm-` ile başlar. Notlarınızdaki `qm-` cssclass'larını değiştirin ya da bu işi Damask Studio'nun sağlık denetimine bırakın.

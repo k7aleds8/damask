@@ -15,7 +15,7 @@
 
 <br>
 
-[![Version](https://img.shields.io/badge/version-2.0.2-b9a779?style=flat-square&labelColor=002623)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.0.3-b9a779?style=flat-square&labelColor=002623)](CHANGELOG.md)
 [![Obsidian](https://img.shields.io/badge/Obsidian-1.5%2B-7ea69c?style=flat-square&labelColor=002623&logo=obsidian&logoColor=edebe0)](https://obsidian.md)
 [![Modes](https://img.shields.io/badge/dark%20·%20light-7%20palettes-a67b7c?style=flat-square&labelColor=002623)](#لوحات-الألوان)
 [![License](https://img.shields.io/badge/license-MIT-edebe0?style=flat-square&labelColor=002623)](LICENSE)
@@ -141,9 +141,9 @@
 
 ## التثبيت
 
-**من داخل أوبسيديان** — *الإعدادات ← المظهر ← الثيمات ← Manage*، ابحث عن **Damask**، ثم *Install and use*. وثبّت **Style Settings** أيضاً إن أردت تغيير لوحات الألوان والخيارات.
+**من داخل أوبسيديان** — *الإعدادات ← المظهر ← الثيمات ← Manage*، ابحث عن **Damascene**، ثم *Install and use*. ما زال متصفح الثيمات يعرضه باسمه الأول ريثما يُعتمد اسم Damask، وهو الثيم نفسه. وثبّت **Style Settings** أيضاً إن أردت تغيير لوحات الألوان والخيارات.
 
-**يدوياً** — نزّل `theme.css` و`manifest.json` من [أحدث إصدار](https://github.com/k7aleds8/damask/releases) إلى `.obsidian/themes/Damask/`، ثم اختر Damask من *الإعدادات ← المظهر*.
+**يدوياً** — نزّل `theme.css` و`manifest.json` من [أحدث إصدار](https://github.com/k7aleds8/damask/releases) إلى `.obsidian/themes/Damascene/`، ثم اختر Damascene من *الإعدادات ← المظهر*.
 
 ## خيارات الثيم
 
@@ -237,7 +237,7 @@
 لا. الثيم كامل وحده، وStyle Settings لا تلزم إلا لتغيير لوحات الألوان والخيارات. ولأفضل تجربة ننصح بإضافة [Damask Studio](https://github.com/k7aleds8/damask-studio).
 
 **ثبّتّه حين كان اسمه Damascene.**
-ثبّت **Damask** من متصفح الثيمات واختره، فهو الثيم نفسه. وتأخذ Damask Studio إعدادات Damascene Studio السابقة تلقائياً، وتبقى كتل `damascene-home` القديمة تعمل.
+لا شيء عليك فعله: إنه الثيم نفسه ويستمر في التحديث كما هو. وتأخذ Damask Studio إعدادات Damascene Studio السابقة تلقائياً، وتبقى كتل `damascene-home` القديمة تعمل.
 
 **كنت أستخدم ثيم قمرة.**
 انتقل إلى Damask: لوحات الألوان والمربعات هي نفسها، والأصناف صارت تبدأ بـ `dm-` بدل `qm-`. غيّر أصناف `qm-` في ملاحظاتك، أو دع فحص الصحة في Damask Studio يفعل ذلك عنك.

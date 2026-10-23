@@ -13,7 +13,7 @@ lo bastante sereno para escribir largo, lo bastante ornamentado para sentir que 
 
 <br>
 
-[![Version](https://img.shields.io/badge/version-2.0.2-b9a779?style=flat-square&labelColor=002623)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.0.3-b9a779?style=flat-square&labelColor=002623)](CHANGELOG.md)
 [![Obsidian](https://img.shields.io/badge/Obsidian-1.5%2B-7ea69c?style=flat-square&labelColor=002623&logo=obsidian&logoColor=edebe0)](https://obsidian.md)
 [![Modes](https://img.shields.io/badge/dark%20·%20light-7%20palettes-a67b7c?style=flat-square&labelColor=002623)](#paletas)
 [![License](https://img.shields.io/badge/license-MIT-edebe0?style=flat-square&labelColor=002623)](LICENSE)
@@ -139,9 +139,9 @@ Las mismas paletas, ornamentos y bloques funcionan en iPhone, Android e iPad. En
 
 ## Instalación
 
-**Desde Obsidian**: *Ajustes → Apariencia → Temas → Gestionar*, busca **Damask** y pulsa *Instalar y usar*. Instala también **Style Settings** si quieres cambiar de paleta y de opciones.
+**Desde Obsidian**: *Ajustes → Apariencia → Temas → Gestionar*, busca **Damascene** y pulsa *Instalar y usar*. El explorador de temas aún lo muestra con su primer nombre mientras se aprueba el cambio a Damask; es el mismo tema. Instala también **Style Settings** si quieres cambiar de paleta y de opciones.
 
-**A mano**: descarga `theme.css` y `manifest.json` de la [última versión](https://github.com/k7aleds8/damask/releases) en `.obsidian/themes/Damask/` y elige Damask en *Ajustes → Apariencia*.
+**A mano**: descarga `theme.css` y `manifest.json` de la [última versión](https://github.com/k7aleds8/damask/releases) en `.obsidian/themes/Damascene/` y elige Damascene en *Ajustes → Apariencia*.
 
 ## Opciones del tema
 
@@ -235,7 +235,7 @@ El tema no necesita nada más, pero se diseñó junto a **[Damask Studio](https:
 No. El tema está completo por sí solo; Style Settings solo hace falta para cambiar de paleta y de opciones. Para la experiencia más completa, te recomendamos añadir [Damask Studio](https://github.com/k7aleds8/damask-studio).
 
 **Lo instalé cuando se llamaba Damascene.**
-Instala **Damask** desde el explorador de temas y actívalo: es el mismo tema. Damask Studio recupera por sí solo los ajustes del antiguo Damascene Studio, y los bloques `damascene-home` antiguos siguen funcionando.
+No tienes que hacer nada: es el mismo tema y se sigue actualizando. Damask Studio recupera por sí solo los ajustes del antiguo Damascene Studio, y los bloques `damascene-home` antiguos siguen funcionando.
 
 **Usaba Qomra.**
 Cambia a Damask: las paletas y los bloques son los mismos, y las clases ahora empiezan por `dm-` en lugar de `qm-`. Cambia las cssclasses `qm-` de tus notas, o deja que la revisión de salud de Damask Studio lo haga por ti.

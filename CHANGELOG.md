@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.3
+
+- The theme keeps the name *Damascene* in Obsidian's theme browser for now, since the
+  directory does not allow a listed theme to be renamed. Everything else, from the README
+  to Style Settings, says Damask, and nothing changes for anyone who has it installed.
+
 ## 2.0.2
 
 - New name: **Damask**, the English word for the silk first woven in Damascus. The README
