@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.4
+
+- Cleaner stylesheet: no more `!important`, and `:has()` is down to the one place that needs
+  it. Tables, callouts and links look exactly as before.
+- Needs Obsidian 1.8.7 or newer, the same as Damask Studio.
+
 ## 2.0.3
 
 - The theme keeps the name *Damascene* in Obsidian's theme browser for now, since the
