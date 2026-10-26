@@ -41,9 +41,7 @@ body:not(.dm-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-head
 }
 body:not(.dm-plain-headings) .markdown-rendered h4,
 body:not(.dm-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4 {
-  text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, var(--dm-h4) 45%, transparent);
-  text-decoration-thickness: 2px;
+  text-decoration: underline 2px color-mix(in srgb, var(--dm-h4) 45%, transparent);
   text-underline-offset: 8px;
 }
 .markdown-rendered h5, .markdown-rendered h6 { opacity: .92; }

@@ -79,7 +79,7 @@
   --callout-color: var(--dm-forest-rgb);
   text-align: center;
   border-radius: 4px;
-  padding: 1.6em 2.4em 1.3em !important;
+  padding: 1.6em 2.4em 1.3em;
   outline-offset: -9px;
   outline: 1px solid rgba(var(--callout-color), .35);
 }
@@ -95,7 +95,7 @@
 .callout[data-callout="poem"][data-callout-metadata~="title"] > .callout-title { inset-inline-start: 0; left: 50%; right: auto; transform: translate(-50%, -50%); }
 .callout[data-callout="poem"] .callout-content ul {
   display: grid; grid-template-columns: 1fr 1fr;
-  column-gap: 3.4em; row-gap: .55em;
+  gap: .55em 3.4em;
   margin: 0; padding: 0; list-style: none;
   position: relative;
   font-size: 1.14em; font-weight: 500;
@@ -168,7 +168,7 @@
   color: var(--dm-wheat-text);
   border: none; outline: none;
   border-radius: 4px 4px 4px 22px;
-  padding: 1em 3.2em 1em 1.3em !important;
+  padding: 1em 3.2em 1em 1.3em;
   box-shadow: 0 1px 0 rgba(var(--callout-color), .3), 0 18px 30px -22px rgba(0, 0, 0, .6);
 }
 .callout[data-callout="lined"]::after, .callout[data-callout="lined"]::before { display: none; }
@@ -180,5 +180,5 @@
     linear-gradient(to right, transparent 2.4em, rgba(var(--dm-umber-rgb), .55) 2.4em, rgba(var(--dm-umber-rgb), .55) calc(2.4em + 1px), transparent calc(2.4em + 1px), transparent calc(2.4em + 4px), rgba(var(--dm-umber-rgb), .35) calc(2.4em + 4px), rgba(var(--dm-umber-rgb), .35) calc(2.4em + 5px), transparent calc(2.4em + 5px)),
     repeating-linear-gradient(to bottom, transparent 0 calc(var(--dm-line-height) * 1em - 1px), rgba(var(--callout-color), .4) calc(var(--dm-line-height) * 1em - 1px) calc(var(--dm-line-height) * 1em));
   border-radius: 4px 4px 22px 4px;
-  padding: 1em 1.3em 1em 3.2em !important;
+  padding: 1em 1.3em 1em 3.2em;
 }

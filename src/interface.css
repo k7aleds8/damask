@@ -9,7 +9,7 @@ body.dm-colorful-ribbon .workspace-ribbon .side-dock-ribbon-action:nth-child(4n+
 body.dm-colorful-ribbon .workspace-ribbon .side-dock-ribbon-action:nth-child(4n+3) { color: var(--dm-accent3); }
 
 /* Excalidraw embeds stay transparent */
-.excalidraw-svg, .excalidraw-embedded-img { background: transparent !important; }
+.excalidraw-svg, .excalidraw-embedded-img { background: transparent; }
 
 /* Palette swatches used in the theme guide: <span class="dm-swatch" style="--c:#988561"></span> */
 .dm-swatch { display: inline-block; width: 1.4em; height: 1.4em; border-radius: 6px; vertical-align: middle; background: var(--c); box-shadow: 0 0 0 1px var(--dm-border); margin-inline-end: .4em; }

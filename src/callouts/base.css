@@ -96,13 +96,11 @@ body.dm-flat-ui .callout { box-shadow: none; }
 
 /* ---- Obsidian runtime fixes: callouts must not clip ribbons/medallions ---- */
 /* margins of a callout must stay inside its block wrapper, otherwise the wrapper clips the ribbon */
-.markdown-preview-section > div:has(> .callout),
-.markdown-rendered div:has(> .callout),
-.callout-content:has(> .callout) { display: flow-root; }
-.markdown-preview-section > div:has(> .callout) { padding-top: 2px; overflow: visible !important; contain: none !important; }
+.markdown-preview-section > .el-div:has(> .callout) { display: flow-root; padding-top: 2px; overflow: visible; contain: none; }
+.callout-content { display: flow-root; }
 body { --callout-blend-mode: normal; }
-.callout, .markdown-rendered .callout, .cm-embed-block .callout { overflow: visible !important; mix-blend-mode: normal !important; }
-.cm-embed-block.cm-callout, .markdown-source-view.mod-cm6 .cm-callout { overflow: visible !important; padding-top: 6px; }
+.callout, .markdown-rendered .callout, .cm-embed-block .callout { overflow: visible; mix-blend-mode: normal; }
+.cm-embed-block.cm-callout, .markdown-source-view.mod-cm6 .cm-callout { overflow: visible; padding-top: 6px; }
 .markdown-source-view.mod-cm6 .cm-callout .edit-block-button { top: 6px; inset-inline-end: 6px; z-index: 4; }
 .callout-content { overflow-x: visible; }
 
@@ -118,5 +116,5 @@ body { --callout-blend-mode: normal; }
 
 /* decorative callouts hide the auto title unless metadata says |title */
 .callout:is([data-callout="quote"], [data-callout="cite"], [data-callout="ayah"], [data-callout="poem"], [data-callout="lined"], [data-callout="box"]):not([data-callout-metadata~="title"]) > .callout-title { display: none; }
-.callout:is([data-callout="ayah"], [data-callout="poem"], [data-callout="lined"], [data-callout="box"]):not([data-callout-metadata~="title"]) { padding-top: 1.2em; }
+.callout:is([data-callout="poem"], [data-callout="box"]):not([data-callout-metadata~="title"]) { padding-top: 1.2em; }
 .callout:dir(ltr) > .callout-title { background: linear-gradient(to right, var(--dm-c), var(--dm-c-deep)); }

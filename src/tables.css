@@ -1,6 +1,7 @@
 .markdown-rendered table { border-collapse: separate; border-spacing: 0; border: 1px solid var(--dm-border); border-radius: 12px; overflow: hidden; }
-.markdown-rendered th { border-bottom: 2px solid color-mix(in srgb, var(--dm-accent) 45%, transparent) !important; }
-.markdown-rendered th, .markdown-rendered td { border-inline: none !important; border-top: none !important; padding: .55em .9em; }
-.markdown-rendered tr:not(:last-child) td { border-bottom: 1px solid color-mix(in srgb, var(--dm-border) 70%, transparent) !important; }
+/* one step more specific than Obsidian's own "thead tr > th" and "tbody tr > td" rules */
+body .markdown-rendered thead tr > th { border-bottom: 2px solid color-mix(in srgb, var(--dm-accent) 45%, transparent); }
+body .markdown-rendered thead tr > th, body .markdown-rendered tbody tr > td { border-inline: none; border-top: none; padding: .55em .9em; }
+body .markdown-rendered tbody tr:not(:last-child) > td { border-bottom: 1px solid color-mix(in srgb, var(--dm-border) 70%, transparent); }
 
 .metadata-container { border-radius: 14px; background: color-mix(in srgb, var(--dm-bg3) 45%, transparent); padding: 8px 10px; border: 1px solid color-mix(in srgb, var(--dm-border) 70%, transparent); }

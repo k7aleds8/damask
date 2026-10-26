@@ -712,8 +712,8 @@ code, pre, .cm-inline-code, .HyperMD-codeblock { font-variant-ligatures: none; f
 }
 
 /* links */
-.markdown-rendered a.internal-link, .cm-hmd-internal-link { text-underline-offset: 4px; text-decoration-color: color-mix(in srgb, var(--dm-accent) 40%, transparent); }
-.markdown-rendered a.internal-link:hover { text-decoration-color: var(--dm-accent); }
+.markdown-rendered a.internal-link, .cm-hmd-internal-link { text-underline-offset: 4px; text-decoration: var(--link-decoration) var(--link-decoration-thickness) color-mix(in srgb, var(--dm-accent) 40%, transparent); }
+.markdown-rendered a.internal-link:hover { text-decoration: var(--link-decoration-hover) var(--link-decoration-thickness) var(--dm-accent); }
 
 /* tags */
 a.tag, .cm-hashtag { font-size: .82em; font-weight: 500; }
@@ -772,9 +772,7 @@ body:not(.dm-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-head
 }
 body:not(.dm-plain-headings) .markdown-rendered h4,
 body:not(.dm-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4 {
-  text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, var(--dm-h4) 45%, transparent);
-  text-decoration-thickness: 2px;
+  text-decoration: underline 2px color-mix(in srgb, var(--dm-h4) 45%, transparent);
   text-underline-offset: 8px;
 }
 .markdown-rendered h5, .markdown-rendered h6 { opacity: .92; }
@@ -1008,13 +1006,11 @@ body.dm-flat-ui .callout { box-shadow: none; }
 
 /* ---- Obsidian runtime fixes: callouts must not clip ribbons/medallions ---- */
 /* margins of a callout must stay inside its block wrapper, otherwise the wrapper clips the ribbon */
-.markdown-preview-section > div:has(> .callout),
-.markdown-rendered div:has(> .callout),
-.callout-content:has(> .callout) { display: flow-root; }
-.markdown-preview-section > div:has(> .callout) { padding-top: 2px; overflow: visible !important; contain: none !important; }
+.markdown-preview-section > .el-div:has(> .callout) { display: flow-root; padding-top: 2px; overflow: visible; contain: none; }
+.callout-content { display: flow-root; }
 body { --callout-blend-mode: normal; }
-.callout, .markdown-rendered .callout, .cm-embed-block .callout { overflow: visible !important; mix-blend-mode: normal !important; }
-.cm-embed-block.cm-callout, .markdown-source-view.mod-cm6 .cm-callout { overflow: visible !important; padding-top: 6px; }
+.callout, .markdown-rendered .callout, .cm-embed-block .callout { overflow: visible; mix-blend-mode: normal; }
+.cm-embed-block.cm-callout, .markdown-source-view.mod-cm6 .cm-callout { overflow: visible; padding-top: 6px; }
 .markdown-source-view.mod-cm6 .cm-callout .edit-block-button { top: 6px; inset-inline-end: 6px; z-index: 4; }
 .callout-content { overflow-x: visible; }
 
@@ -1030,7 +1026,7 @@ body { --callout-blend-mode: normal; }
 
 /* decorative callouts hide the auto title unless metadata says |title */
 .callout:is([data-callout="quote"], [data-callout="cite"], [data-callout="ayah"], [data-callout="poem"], [data-callout="lined"], [data-callout="box"]):not([data-callout-metadata~="title"]) > .callout-title { display: none; }
-.callout:is([data-callout="ayah"], [data-callout="poem"], [data-callout="lined"], [data-callout="box"]):not([data-callout-metadata~="title"]) { padding-top: 1.2em; }
+.callout:is([data-callout="poem"], [data-callout="box"]):not([data-callout-metadata~="title"]) { padding-top: 1.2em; }
 .callout:dir(ltr) > .callout-title { background: linear-gradient(to right, var(--dm-c), var(--dm-c-deep)); }
 
 /* ---------- [!quote] — medallion card (default)  |side |big |forest |umber |wheat ---------- */
@@ -1114,7 +1110,7 @@ body { --callout-blend-mode: normal; }
   --callout-color: var(--dm-forest-rgb);
   text-align: center;
   border-radius: 4px;
-  padding: 1.6em 2.4em 1.3em !important;
+  padding: 1.6em 2.4em 1.3em;
   outline-offset: -9px;
   outline: 1px solid rgba(var(--callout-color), .35);
 }
@@ -1130,7 +1126,7 @@ body { --callout-blend-mode: normal; }
 .callout[data-callout="poem"][data-callout-metadata~="title"] > .callout-title { inset-inline-start: 0; left: 50%; right: auto; transform: translate(-50%, -50%); }
 .callout[data-callout="poem"] .callout-content ul {
   display: grid; grid-template-columns: 1fr 1fr;
-  column-gap: 3.4em; row-gap: .55em;
+  gap: .55em 3.4em;
   margin: 0; padding: 0; list-style: none;
   position: relative;
   font-size: 1.14em; font-weight: 500;
@@ -1203,7 +1199,7 @@ body { --callout-blend-mode: normal; }
   color: var(--dm-wheat-text);
   border: none; outline: none;
   border-radius: 4px 4px 4px 22px;
-  padding: 1em 3.2em 1em 1.3em !important;
+  padding: 1em 3.2em 1em 1.3em;
   box-shadow: 0 1px 0 rgba(var(--callout-color), .3), 0 18px 30px -22px rgba(0, 0, 0, .6);
 }
 .callout[data-callout="lined"]::after, .callout[data-callout="lined"]::before { display: none; }
@@ -1215,7 +1211,7 @@ body { --callout-blend-mode: normal; }
     linear-gradient(to right, transparent 2.4em, rgba(var(--dm-umber-rgb), .55) 2.4em, rgba(var(--dm-umber-rgb), .55) calc(2.4em + 1px), transparent calc(2.4em + 1px), transparent calc(2.4em + 4px), rgba(var(--dm-umber-rgb), .35) calc(2.4em + 4px), rgba(var(--dm-umber-rgb), .35) calc(2.4em + 5px), transparent calc(2.4em + 5px)),
     repeating-linear-gradient(to bottom, transparent 0 calc(var(--dm-line-height) * 1em - 1px), rgba(var(--callout-color), .4) calc(var(--dm-line-height) * 1em - 1px) calc(var(--dm-line-height) * 1em));
   border-radius: 4px 4px 22px 4px;
-  padding: 1em 1.3em 1em 3.2em !important;
+  padding: 1em 1.3em 1em 3.2em;
 }
 
 /* ---------- foldable callouts (> [!type]- / +) ---------- */
@@ -1245,7 +1241,7 @@ body { --callout-blend-mode: normal; }
   display: flex;
   align-items: center;
   margin: 1.25em 0 1.15em;          /* ribbon centre stays where it sits on the open card's top edge */
-  padding: 0 !important;
+  padding: 0;
   min-height: 0;
   border: 0;
   border-radius: 0;
@@ -1276,7 +1272,7 @@ body { --callout-blend-mode: normal; }
 }
 .callout.is-collapsible.is-collapsed:dir(ltr)::after { background: linear-gradient(to right, rgba(var(--callout-color), .9), rgba(var(--callout-color), .25) 70%, transparent); }
 .callout.is-collapsible.is-collapsed > .callout-title {
-  display: inline-flex !important;      /* decorative types that hide their title still need a handle when folded */
+  display: inline-flex;      /* decorative types that hide their title still need a handle when folded */
   position: static;
   transform: none;
   flex: none;
@@ -1292,19 +1288,19 @@ body { --callout-blend-mode: normal; }
   z-index: 3;
 }
 .callout.is-collapsible.is-collapsed > .callout-title .callout-fold { inset-inline-start: auto; inset-inline-end: 0; }
-.callout.is-collapsible.is-collapsed > .callout-content { display: none !important; }
+.callout.is-collapsible.is-collapsed > .callout-content { display: none; }
 .callout.is-collapsible.is-collapsed:hover::after { opacity: 1; }
 .callout.is-collapsible.is-collapsed:hover > .callout-title { filter: brightness(1.08) saturate(1.05); }
 .callout.is-collapsible.is-collapsed:hover > .callout-title .callout-fold { border-color: rgb(var(--callout-color)); background: rgba(var(--callout-color), .14); }
 /* Live Preview: keep the chevron clear of the edit-block button */
 .cm-embed-block.cm-callout > .callout.is-collapsible.is-collapsed::after { margin-inline-end: calc(1.55em * .9 + 44px); }
 .cm-embed-block.cm-callout > .callout.is-collapsible.is-collapsed > .callout-title .callout-fold { inset-inline-end: 30px; }
-.markdown-source-view.mod-cm6 .cm-callout:has(> .callout.is-collapsed) .edit-block-button { top: 50%; transform: translateY(calc(-50% + 3px)); }
 
 .markdown-rendered table { border-collapse: separate; border-spacing: 0; border: 1px solid var(--dm-border); border-radius: 12px; overflow: hidden; }
-.markdown-rendered th { border-bottom: 2px solid color-mix(in srgb, var(--dm-accent) 45%, transparent) !important; }
-.markdown-rendered th, .markdown-rendered td { border-inline: none !important; border-top: none !important; padding: .55em .9em; }
-.markdown-rendered tr:not(:last-child) td { border-bottom: 1px solid color-mix(in srgb, var(--dm-border) 70%, transparent) !important; }
+/* one step more specific than Obsidian's own "thead tr > th" and "tbody tr > td" rules */
+body .markdown-rendered thead tr > th { border-bottom: 2px solid color-mix(in srgb, var(--dm-accent) 45%, transparent); }
+body .markdown-rendered thead tr > th, body .markdown-rendered tbody tr > td { border-inline: none; border-top: none; padding: .55em .9em; }
+body .markdown-rendered tbody tr:not(:last-child) > td { border-bottom: 1px solid color-mix(in srgb, var(--dm-border) 70%, transparent); }
 
 .metadata-container { border-radius: 14px; background: color-mix(in srgb, var(--dm-bg3) 45%, transparent); padding: 8px 10px; border: 1px solid color-mix(in srgb, var(--dm-border) 70%, transparent); }
 
@@ -1319,7 +1315,7 @@ body.dm-colorful-ribbon .workspace-ribbon .side-dock-ribbon-action:nth-child(4n+
 body.dm-colorful-ribbon .workspace-ribbon .side-dock-ribbon-action:nth-child(4n+3) { color: var(--dm-accent3); }
 
 /* Excalidraw embeds stay transparent */
-.excalidraw-svg, .excalidraw-embedded-img { background: transparent !important; }
+.excalidraw-svg, .excalidraw-embedded-img { background: transparent; }
 
 /* Palette swatches used in the theme guide: <span class="dm-swatch" style="--c:#988561"></span> */
 .dm-swatch { display: inline-block; width: 1.4em; height: 1.4em; border-radius: 6px; vertical-align: middle; background: var(--c); box-shadow: 0 0 0 1px var(--dm-border); margin-inline-end: .4em; }

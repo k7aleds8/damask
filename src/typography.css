@@ -36,8 +36,8 @@ code, pre, .cm-inline-code, .HyperMD-codeblock { font-variant-ligatures: none; f
 }
 
 /* links */
-.markdown-rendered a.internal-link, .cm-hmd-internal-link { text-underline-offset: 4px; text-decoration-color: color-mix(in srgb, var(--dm-accent) 40%, transparent); }
-.markdown-rendered a.internal-link:hover { text-decoration-color: var(--dm-accent); }
+.markdown-rendered a.internal-link, .cm-hmd-internal-link { text-underline-offset: 4px; text-decoration: var(--link-decoration) var(--link-decoration-thickness) color-mix(in srgb, var(--dm-accent) 40%, transparent); }
+.markdown-rendered a.internal-link:hover { text-decoration: var(--link-decoration-hover) var(--link-decoration-thickness) var(--dm-accent); }
 
 /* tags */
 a.tag, .cm-hashtag { font-size: .82em; font-weight: 500; }

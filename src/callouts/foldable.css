@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   margin: 1.25em 0 1.15em;          /* ribbon centre stays where it sits on the open card's top edge */
-  padding: 0 !important;
+  padding: 0;
   min-height: 0;
   border: 0;
   border-radius: 0;
@@ -56,7 +56,7 @@
 }
 .callout.is-collapsible.is-collapsed:dir(ltr)::after { background: linear-gradient(to right, rgba(var(--callout-color), .9), rgba(var(--callout-color), .25) 70%, transparent); }
 .callout.is-collapsible.is-collapsed > .callout-title {
-  display: inline-flex !important;      /* decorative types that hide their title still need a handle when folded */
+  display: inline-flex;      /* decorative types that hide their title still need a handle when folded */
   position: static;
   transform: none;
   flex: none;
@@ -72,11 +72,10 @@
   z-index: 3;
 }
 .callout.is-collapsible.is-collapsed > .callout-title .callout-fold { inset-inline-start: auto; inset-inline-end: 0; }
-.callout.is-collapsible.is-collapsed > .callout-content { display: none !important; }
+.callout.is-collapsible.is-collapsed > .callout-content { display: none; }
 .callout.is-collapsible.is-collapsed:hover::after { opacity: 1; }
 .callout.is-collapsible.is-collapsed:hover > .callout-title { filter: brightness(1.08) saturate(1.05); }
 .callout.is-collapsible.is-collapsed:hover > .callout-title .callout-fold { border-color: rgb(var(--callout-color)); background: rgba(var(--callout-color), .14); }
 /* Live Preview: keep the chevron clear of the edit-block button */
 .cm-embed-block.cm-callout > .callout.is-collapsible.is-collapsed::after { margin-inline-end: calc(1.55em * .9 + 44px); }
 .cm-embed-block.cm-callout > .callout.is-collapsible.is-collapsed > .callout-title .callout-fold { inset-inline-end: 30px; }
-.markdown-source-view.mod-cm6 .cm-callout:has(> .callout.is-collapsed) .edit-block-button { top: 50%; transform: translateY(calc(-50% + 3px)); }
